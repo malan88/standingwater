@@ -1,7 +1,7 @@
 ---
 title: "Duvall Invitational Realtime Scoring Site"
 url: "https://duvallinvitational.com"
-featureImage: "./duvall.jpg"
+featureImage: "./duvall.png"
 short: "duvall"
 ---
 My father hosts a golf tournament every year known as the DuVall Invitational.

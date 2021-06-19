@@ -1,7 +1,7 @@
 ---
 title: "Intertextual Canon Cloud (anno.wiki)"
 url: "https://github.com/malan88/icc"
-featureImage: "./annowiki.jpg"
+featureImage: "./annowiki.png"
 short: "annowiki"
 ---
 The ICC is a web application designed to allow for collaboratively building an
