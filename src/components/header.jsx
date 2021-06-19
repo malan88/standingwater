@@ -21,9 +21,9 @@ const NavLink = styled(Link)`
 const Header = () => {
   return (
     <Nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="#">Projects</NavLink>
-      <NavLink to="#">Blog</NavLink>
+      <NavLink to="/">home</NavLink>
+      <NavLink to="/projects">projects</NavLink>
+      <NavLink to="/blog">blog</NavLink>
     </Nav>
 
   )
