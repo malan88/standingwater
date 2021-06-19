@@ -2,7 +2,7 @@
 title: "Strata Laser Interface"
 featureImage: "./strata.jpg"
 short: "strata"
-category: "desktop application"
+category: "hardware"
 tags: ["c#", "wpf", "medical device", "interface"]
 ---
 This project is ongoing, as the company consistently wants more modules and

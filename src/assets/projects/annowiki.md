@@ -4,7 +4,7 @@ url: "https://github.com/malan88/icc"
 featureImage: "./annowiki.png"
 short: "annowiki"
 category: "web"
-tags: ["python", "javascript", "flask", "etl", "heroku", "mariadb", "elasticsearch", "sqlalchemy"]
+tags: ["python", "javascript", "flask", "etl", "heroku", "mariadb", "elasticsearch", "sqlalchemy", "jinja2"]
 ---
 The ICC is a web application designed to allow for collaboratively building an
 exhaustive and definitive repository of annotated literature. I designed,
