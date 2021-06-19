@@ -2,6 +2,8 @@
 title: "Strata Laser Interface"
 featureImage: "./strata.jpg"
 short: "strata"
+category: "desktop application"
+tags: ["c#", "wpf", "medical device", "interface"]
 ---
 This project is ongoing, as the company consistently wants more modules and
 modes to the system. It is a touch screen interface for a laser system designed

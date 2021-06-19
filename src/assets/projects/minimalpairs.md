@@ -3,6 +3,8 @@ title: "Generated Anki decks"
 url: "https://github.com/malan88/minimalpairs"
 featureImage: "./anki.jpg"
 short: "anki"
+category: "automation"
+tags: ["python", "forvo", "ibm watson", "anki", "beautifulsoup4", "language"]
 ---
 Learning French from English is sometimes tricky. Especially with recognizing
 the difference between certain words, like au-dessous vs au-dessus (below vs

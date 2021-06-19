@@ -3,6 +3,8 @@ title: "Duvall Invitational Realtime Scoring Site"
 url: "https://duvallinvitational.com"
 featureImage: "./duvall.png"
 short: "duvall"
+category: "web"
+tags: ["ssg", "sergey", "excel", "onedrive"]
 ---
 My father hosts a golf tournament every year known as the DuVall Invitational.
 It's been running for over fifty years and is mostly played by men in the

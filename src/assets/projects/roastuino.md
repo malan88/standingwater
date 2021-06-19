@@ -3,6 +3,8 @@ title: "Roastuino"
 url: "https://github.com/malan88/coffee-roaster/"
 featureImage: "./roastuino.jpg"
 short: "roastuino"
+category: "hardware"
+tags: ["arduino", "c++", "artisan scope", "coffee"]
 ---
 As part of my continuing obsession with coffee I discovered that I could get a
 lot cheaper specialty coffee, roasted closer to my personal taste, from the

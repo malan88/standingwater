@@ -3,6 +3,8 @@ title: "glendalepainting.com"
 url: "https://glendalepainting.netlify.app"
 featureImage: "./glendalepainting.jpg"
 short: "glendale"
+category: web
+tags: ["react", "javascript", "gatsby", "photoshop", "react-spring"]
 ---
 
 This site was built for my father's commercial painting company. It was my first

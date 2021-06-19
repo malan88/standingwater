@@ -3,6 +3,8 @@ title: "Letters of John and Abigail Adams Twitterbot"
 url: "https://github.com/malan88/johnandabigail"
 featureImage: "./john_and_abbie.png"
 short: "john"
+category: "automation"
+tags: ["python", "aws lambda", "aws dynamodb", "twitterbot", "netlify", "beautifulsoup4", "scraping"]
 ---
 This project was inspired by a [photo][11] that made the rounds of Twitter in
 the wake of the protests in June 2020. The photo was of John Trumbull's famous

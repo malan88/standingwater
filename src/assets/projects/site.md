@@ -3,7 +3,11 @@ title: "standingwater.io & blog.standingwater.io"
 url: "https://blog.standingwater.io"
 featureImage: "./site.jpg"
 short: "stdwtr"
+category: web
+tags: ["react", "javascript", "gatsby", "ssg"]
 ---
+***Note: This refers to the previous iteration of this site***
+
 I developed this portfolio site and the accompanying blog using GatsbyJS, which
 I've come to increasingly love for quick static site generation. The GraphQL is,
 while not the most intuitive, at least pretty useful. Especially the dynamic

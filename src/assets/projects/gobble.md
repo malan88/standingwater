@@ -2,6 +2,8 @@
 title: "gobble.py"
 url: "https://github.com/malan88/gobble"
 short: "gobble"
+category: "automation"
+tags: ["security", "python"]
 ---
 This was a one off quick project as a joke idea. It's a python script using the
 `secrets` module from the Standard Library to generate a password including an

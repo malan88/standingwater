@@ -2,6 +2,8 @@
 title: "teamup.py"
 url: "https://github.com/malan88/teamup"
 short: "teamup"
+category: "automation"
+tags: ["combinatronics", "good enough results", "python"]
 ---
 
 This script came about because of a family tradition of playing Christmas
