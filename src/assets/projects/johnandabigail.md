@@ -1,7 +1,7 @@
 ---
 title: "Letters of John and Abigail Adams Twitterbot"
 url: "https://github.com/malan88/johnandabigail"
-featureImage: "./johnandabigail.jpg"
+featureImage: "./john_and_abbie.png"
 short: "john"
 ---
 This project was inspired by a [photo][11] that made the rounds of Twitter in
