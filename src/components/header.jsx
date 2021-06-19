@@ -10,11 +10,11 @@ align-items: center;
 const NavLink = styled(Link)`
   margin: 1rem;
   color: black;
-  font-size: 1.5rem;
-  font-family: Work Sans;
+  font-size: 1.75rem;
+  font-family: ${(props) => props.theme.fonts.Nav};
   text-decoration: none;
   &:hover {
-    color: ${({theme}) => theme.colors.Blue};
+    color: ${(props) => props.theme.colors.Blue};
     transition: color 0.25s ease-in;
   }
 `;
@@ -22,11 +22,8 @@ const Header = () => {
   return (
     <Nav>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="#">Skills</NavLink>
       <NavLink to="#">Projects</NavLink>
       <NavLink to="#">Blog</NavLink>
-      <NavLink to="#">Contact</NavLink>
     </Nav>
 
   )

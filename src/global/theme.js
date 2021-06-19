@@ -1,4 +1,4 @@
-const fallbacks = "Helvetica, Arial, Sans-Serif";
+const fallbacks = ", Helvetica, Arial, Sans-Serif";
 
 const theme = {
   colors: {
@@ -9,8 +9,8 @@ const theme = {
     White:  "#ffffff"
   },
   fonts: {
-    Nav: "Work Sans" + fallbacks,
-    Title: "Work Sans" + fallbacks,
+    Nav: "Nunito" + fallbacks,
+    Title: "Nunito" + fallbacks,
     Heading: "Work Sans" + fallbacks,
     Text: "Work Sans" + fallbacks,
   }
