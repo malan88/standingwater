@@ -24,10 +24,6 @@ const Emphasis = styled.strong`
 const Emphasis2 = styled.strong`
   color: ${(props) => props.theme.colors.Emerald};
 `;
-const Emphasis3 = styled.strong`
-  color: ${(props) => props.theme.colors.Blue2};
-  text-shadow: 2px 2px ${(props) => props.theme.colors.White};
-`;
 
 const HeroPanel = () => {
   return (

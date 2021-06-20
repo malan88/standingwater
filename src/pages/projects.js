@@ -1,29 +1,29 @@
-import React from 'react';
-import Layout from '../components/layout';
-import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
-import order from '../markdown/projects/sort';
+import React from "react";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import styled from "styled-components";
+import order from "../markdown/projects/sort";
 import {
   faLayerGroup,
   faServer,
   faDesktop,
   faMicrochip,
-  faRobot, } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+  faRobot,
+  faAngleDoubleUp,
+  faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const categories = {
   automation: faRobot,
+  fullstack: faLayerGroup,
   frontend: faDesktop,
   backend: faServer,
   hardware: faMicrochip,
-  fullstack: faLayerGroup
-
-}
+};
 const Body = styled.div`
   font-size: 1.2rem;
-`
+`;
 const IconFrame = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -41,9 +41,6 @@ const IconFrame = styled.div`
     color: ${(props) => props.theme.colors.Blue};
   }
 `;
-const Icon = styled(FontAwesomeIcon)`
-`;
-
 const Image = styled(GatsbyImage)`
   margin: 0 auto;
 `;
@@ -86,17 +83,16 @@ const Tags = styled.div`
 
 const Project = (props) => {
   return (
-    <Box>
-      {
-        props.image &&
-          <a href={props.url}>
-            <Image
-              alt={props.title}
-              image={props.image}
-              style={{ borderRadius: 20, overflow: "hidden" }}
-            />
-          </a>
-      }
+    <Box id={props.id}>
+      {props.image && (
+        <a href={props.url}>
+          <Image
+            alt={props.title}
+            image={props.image}
+            style={{ borderRadius: 20, overflow: "hidden" }}
+          />
+        </a>
+      )}
       <Text>
         {props.tags.map((tag) => (
           <Pill
@@ -107,12 +103,60 @@ const Project = (props) => {
             {tag}
           </Pill>
         ))}
-        <h1><a href={props.url}><FontAwesomeIcon icon={categories[props.category]}/> {props.title}</a></h1>
-        <div dangerouslySetInnerHTML={{__html: props.body}} />
+        <h1>
+          <a href={props.url}>
+            <FontAwesomeIcon icon={categories[props.category]} /> {props.title}
+          </a>
+        </h1>
+        <div dangerouslySetInnerHTML={{ __html: props.body }} />
       </Text>
     </Box>
-  )
-}
+  );
+};
+
+const SideBarContainer = styled.div`
+  position: fixed;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-family: ${(props) => props.theme.fonts.Title};
+`;
+const SidebarLink = styled.a`
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+`
+const Icon = styled(FontAwesomeIcon)`
+  margin: 1rem auto;
+  width: fit-content;
+  color: ${(props) => props.theme.colors.Blue};
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.colors.Sienna};
+  }
+`;
+
+const SideBar = ({ visible }) => {
+  const toBottom = () => {
+    window.scroll(0, document.body.scrollHeight);
+  }
+  const toTop = () => {
+    window.scroll(0, 0);
+  }
+  return (
+    <SideBarContainer>
+      <Icon size="2x" onClick={() => toTop()} icon={faAngleDoubleUp} title="Scroll to top"/>
+      {visible.map(({ node }) => (
+        <SidebarLink href={`#${node.frontmatter.title}`}>{node.frontmatter.title}</SidebarLink>
+      ))}
+      <Icon size="2x" onClick={() => toBottom()} icon={faAngleDoubleDown} title="Scroll to bottom"/>
+    </SideBarContainer>
+  );
+};
 
 class ProjectPage extends React.Component {
   constructor(props) {
@@ -120,33 +164,41 @@ class ProjectPage extends React.Component {
     const nodes = props.data.allMarkdownRemark.edges;
 
     // sort nodes based on order
-    nodes.sort((a,b) => { return order.indexOf(a.node.frontmatter.short) - order.indexOf(b.node.frontmatter.short); });
+    nodes.sort((a, b) => {
+      return (
+        order.indexOf(a.node.frontmatter.short) -
+        order.indexOf(b.node.frontmatter.short)
+      );
+    });
 
     // remove nodes not in order and add all tags
     for (let i = 0; i < nodes.length; i++)
-      if (!order.includes(nodes[i].node.frontmatter.short)) nodes.splice(i,1);
+      if (!order.includes(nodes[i].node.frontmatter.short)) nodes.splice(i, 1);
 
     // create tag list and category tree map
     const tags = new Set();
-    const categoryTagMap = {}
-    Object.keys(categories).forEach((cat) => categoryTagMap[cat] = []); // initialize map
+    const categoryTagMap = {};
+    Object.keys(categories).forEach((cat) => (categoryTagMap[cat] = [])); // initialize map
     for (let i = 0; i < nodes.length; i++) {
       const node = nodes[i].node;
       node.frontmatter.tags.forEach((tag) => {
         tags.add(tag);
-        if (!categoryTagMap[node.frontmatter.category].includes(tag)) categoryTagMap[node.frontmatter.category].push(tag);
-      })
+        if (!categoryTagMap[node.frontmatter.category].includes(tag))
+          categoryTagMap[node.frontmatter.category].push(tag);
+      });
     }
     Object.keys(categoryTagMap).forEach((cat) => categoryTagMap[cat].sort()); // sort maps
     this.categoryTagMap = categoryTagMap;
-    nodes.forEach(({node}) => node.frontmatter.tags.forEach((tag) => tags.add(tag)));
+    nodes.forEach(({ node }) =>
+      node.frontmatter.tags.forEach((tag) => tags.add(tag))
+    );
     this.tags = [...tags];
     this.tags.sort();
     this.nodes = nodes;
     this.state = {
       visible: nodes,
       selectedTags: [],
-      selectedCategory: '',
+      selectedCategory: "",
       visibleTags: this.tags,
       visiblePool: nodes,
     };
@@ -158,11 +210,11 @@ class ProjectPage extends React.Component {
       const index = sel.indexOf(tag);
       if (index > -1) sel.splice(index, 1);
     } else sel.push(tag);
-    this.setState({selectedTags: sel}, () => this.filterTags());
-  }
+    this.setState({ selectedTags: sel }, () => this.filterTags());
+  };
 
   filterTags = () => {
-    console.log('filterTags');
+    console.log("filterTags");
     const visible = this.state.visiblePool.slice();
     const sel = this.state.selectedTags.slice();
     let newvisible = [];
@@ -173,71 +225,88 @@ class ProjectPage extends React.Component {
         for (let tag of node.node.frontmatter.tags) {
           if (sel.includes(tag)) {
             newvisible.push(node);
-            console.log(node.node.frontmatter.title)
+            console.log(node.node.frontmatter.title);
             break;
           }
         }
       });
-    this.setState({visible: newvisible})
-  }
+    this.setState({ visible: newvisible });
+  };
 
   clickCategoryHandler = (category) => {
-    if (this.state.selectedCategory===category)
-      this.setState({
-        selectedCategory: "",
-        selectedTags:[],
-        visibleTags: this.tags
-      }, () => this.filterCategory());
+    if (this.state.selectedCategory === category)
+      this.setState(
+        {
+          selectedCategory: "",
+          selectedTags: [],
+          visibleTags: this.tags,
+        },
+        () => this.filterCategory()
+      );
     else
-      this.setState({
-        selectedCategory: category,
-        selectedTags: [],
-        visibleTags: this.categoryTagMap[category]
-      }, () => this.filterCategory());
-  }
+      this.setState(
+        {
+          selectedCategory: category,
+          selectedTags: [],
+          visibleTags: this.categoryTagMap[category],
+        },
+        () => this.filterCategory()
+      );
+  };
   filterCategory = () => {
     const nodes = this.nodes.slice();
     let newvisible = [];
     if (this.state.selectedCategory !== "")
       nodes.forEach((node) => {
-        if (node.node.frontmatter.category === this.state.selectedCategory) newvisible.push(node);
-      })
+        if (node.node.frontmatter.category === this.state.selectedCategory)
+          newvisible.push(node);
+      });
     else newvisible = this.nodes;
-    this.setState({visible: newvisible, visiblePool: newvisible});
-  }
-
+    this.setState({ visible: newvisible, visiblePool: newvisible });
+  };
 
   render() {
     return (
       <Layout>
+        <SideBar visible={this.state.visible} />
         <Body>
-        <Tags>
-          {Object.keys(categories).map((category) => (
-            <IconFrame
-              className={this.state.selectedCategory === category ? "active" : ""}
-              onClick={() => this.clickCategoryHandler(category)}
-              key={category + "root"}
-            >
-              <Icon size="3x"icon={categories[category]} />
-              {category}
-            </IconFrame>
-          ))}
-        </Tags>
-        <Tags>
-          {this.state.visibleTags.map((tag) => (
-            <Pill
-              className={this.state.selectedTags.includes(tag) ? "active" : ""}
-              onClick={() => this.clickTagHandler(tag)}
-              key={tag}>
-              {tag}
-            </Pill>
-          ))}
-        </Tags>
-        {this.state.visible.map(
-          ({node}) => (
+          <Tags>
+            {Object.keys(categories).map((category) => (
+              <IconFrame
+                className={
+                  this.state.selectedCategory === category ? "active" : ""
+                }
+                onClick={() => this.clickCategoryHandler(category)}
+                key={category + "root"}
+              >
+                <FontAwesomeIcon size="3x" icon={categories[category]} />
+                {category}
+              </IconFrame>
+            ))}
+          </Tags>
+          <Tags>
+            {this.state.visibleTags.map((tag) => (
+              <Pill
+                className={
+                  this.state.selectedTags.includes(tag) ? "active" : ""
+                }
+                onClick={() => this.clickTagHandler(tag)}
+                key={tag}
+              >
+                {tag}
+              </Pill>
+            ))}
+          </Tags>
+          {this.state.visible.map(({ node }) => (
             <Project
+              id={node.frontmatter.title}
               key={node.id}
-              image={node.frontmatter.featureImage != null ? node.frontmatter.featureImage.childImageSharp.gatsbyImageData : null}
+              image={
+                node.frontmatter.featureImage != null
+                  ? node.frontmatter.featureImage.childImageSharp
+                      .gatsbyImageData
+                  : null
+              }
               title={node.frontmatter.title}
               body={node.html}
               url={node.frontmatter.url}
@@ -246,17 +315,16 @@ class ProjectPage extends React.Component {
               selectedTags={this.state.selectedTags}
               clickTagHandler={this.clickTagHandler}
             />
-          )
-        )}
+          ))}
         </Body>
       </Layout>
-    )
+    );
   }
 }
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {fields: {collection: {eq: "projects"}}}) {
+    allMarkdownRemark(filter: { fields: { collection: { eq: "projects" } } }) {
       edges {
         node {
           id
@@ -268,7 +336,14 @@ export const query = graphql`
             category
             tags
             featureImage {
-              childImageSharp { gatsbyImageData(layout: FIXED, width: 600, height: 200, quality: 90) }
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FIXED
+                  width: 600
+                  height: 200
+                  quality: 90
+                )
+              }
             }
           }
         }
