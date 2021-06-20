@@ -21,6 +21,10 @@ const Emphasis = styled.strong`
 const Emphasis2 = styled.strong`
   color: ${(props) => props.theme.colors.Emerald};
 `;
+const Emphasis3 = styled.strong`
+  color: ${(props) => props.theme.colors.Blue2};
+  text-shadow: 2px 2px ${(props) => props.theme.colors.White};
+`;
 
 const HeroPanel = () => {
   return (
@@ -56,7 +60,7 @@ const HeroPanel = () => {
 };
 
 const PictureText = styled.div`
-  background-color: ${(props) => props.theme.colors.Amber}4F;
+  background-color: ${(props) => props.theme.colors.Amber}9F;
   color: white;
   text-shadow: 2px 2px ${(props) => props.theme.colors.Charcoal};
   font-weight: 1000;
@@ -76,7 +80,6 @@ const PicturePanel = ({ bgpic }) => {
       <GatsbyImage
         style={{ gridArea: "1/1" }}
         layout="fullWidth"
-        aspectRatio={2 / 1}
         image={bgpic}
         alt=""
       />
@@ -90,15 +93,14 @@ const PicturePanel = ({ bgpic }) => {
       >
         <PictureText>
           Palmettos and slash pine, Muscadine running wild and ibises probing
-          the damp ground after a violent thunderstorm. Standing water and
-          mosquitos have been a part of this landscape for hundreds of millions
-          of years, through everything. These woods and their pooling waters
-          have seen Timucua and Calusa, Appalachee and Seminoles, Spanish
-          Conquistadores and French Huguenots, bucanneers like José Gaspar,
-          Haitian rebels like Georges Biassou, Cuban exiles, Puerto Rican
-          refugees, and immigrants from all over the world. This is the Florida
-          you don't see in brochures. This is{" "}
-          <Emphasis>Standingwater.</Emphasis> Timelessness and Change.
+          the damp ground after a thunderstorm. Standing water and mosquitos
+          have been a part of this landscape for hundreds of millions of years.
+          These woods and their pooling waters have seen Timucua and Calusa,
+          Appalachee and Seminoles, Spanish Conquistadores and French Huguenots,
+          bucanneers like José Gaspar, Haitian rebels like Georges Biassou,
+          Cuban exiles, Puerto Rican refugees, and immigrants from all over the
+          world. That is the Florida you don't see in brochures. <em>That</em>{" "}
+          is <Emphasis2>Standingwater.</Emphasis2>
         </PictureText>
       </div>
     </div>
@@ -123,7 +125,7 @@ const AboutPanel = () => {
       <p>
         The point is this: software is about timelessness and change. You have
         to think about the past and the future, and the diversity of your
-        options.  It's always in the back of your mind. Tech debt, project
+        options. It's always in the back of your mind. Tech debt, project
         structure, dependency choices. You have to think about who will inherit
         your code, just as the Earth. It's all a careful game of timelessness
         and change.
@@ -155,24 +157,72 @@ const AboutPanel = () => {
   );
 };
 
+const Title = styled.a`
+  font-size: 3rem;
+  font-weight: bold;
+`;
+
+const Project = ({ project }) => {
+  console.log(project);
+  return (
+    <div style={{ marginTop: "3rem" }}>
+      {project.frontmatter.url != null ? (
+        <Title href={project.frontmatter.url}>
+          {project.frontmatter.title}
+        </Title>
+      ) : (
+        <h1>{project.frontmatter.title}</h1>
+      )}
+      <div dangerouslySetInnerHTML={{ __html: project.html }} />
+    </div>
+  );
+};
+
+const CurrentProjects = ({ projects }) => {
+  return (
+    <div>
+      <h1>What I'm Working On</h1>
+      {projects.map(({ node }) => (
+        <Project project={node} key={node.id} />
+      ))}
+    </div>
+  );
+};
 
 const IndexPage = ({ data }) => {
-  const bgpic = data.hero.childImageSharp.gatsbyImageData;
+  const bgpic = data.palmetto.childImageSharp.gatsbyImageData;
+  const md = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <div style={{ height: 1 }} />
       <HeroPanel />
       <PicturePanel bgpic={bgpic} />
       <AboutPanel />
+      <CurrentProjects projects={md} />
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
-    hero: file(name: { eq: "palmettos" }) {
+    palmetto: file(name: { eq: "palmettos" }) {
       childImageSharp {
         gatsbyImageData
+      }
+    }
+    allMarkdownRemark(filter: { fields: { collection: { eq: "current" } } }) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            title
+            short
+            url
+            category
+            tags
+          }
+        }
       }
     }
   }

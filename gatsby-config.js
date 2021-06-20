@@ -62,5 +62,13 @@ module.exports = {
       },
       __key: "projects",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "current",
+        path: "./src/markdown/current/",
+      },
+      __key: "current",
+    },
   ],
 };

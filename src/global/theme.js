@@ -5,6 +5,7 @@ const theme = {
     Amber:            "#ffbf00",
     Pink:             "#e83f6f",
     Blue:             "#2274a5",
+    Blue2:            "#3385b6",
     Emerald:          "#32936f",
     White:            "#ffffff",
     Charcoal:         "#264653",
@@ -12,6 +13,7 @@ const theme = {
     Crayola:          "#e9c46a",
     Brown:            "#f4a261",
     Sienna:           "#e76f51",
+    Red:              "#FF0022",
   },
   fonts: {
     Nav: "Nunito" + fallbacks,
