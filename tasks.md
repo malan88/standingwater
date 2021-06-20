@@ -4,4 +4,5 @@
 - [ ] Current projects
 - [ ] Add Perpetual Inventory
 - [ ] Socials and resume
-- [ ] 
+- [ ] Category blurbs
+- [ ] Fix markdown images

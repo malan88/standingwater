@@ -36,6 +36,7 @@ const Header = () => {
         <NavLink to="/blog">blog</NavLink>
       </Nav>
       <div style={{ float: "right" }}>
+        <span style={{ verticalAlign: -70, marginRight: -50 }}>Standingwater</span>
         <Heron />
       </div>
     </Bar>

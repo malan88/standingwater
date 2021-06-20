@@ -9,8 +9,7 @@ import {
   faServer,
   faDesktop,
   faMicrochip,
-  faRobot,
-  faGlobe } from '@fortawesome/free-solid-svg-icons';
+  faRobot, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
