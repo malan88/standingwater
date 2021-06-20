@@ -3,7 +3,7 @@ title: "Amazon BuyBox Notifier"
 url: ""
 featureImage: "./amazon.jpg"
 short: "amazon"
-category: automation
+category: "automation"
 tags: ["python", "beautifulsoup4", "postgres", "elasticsearch"]
 ---
 This project was for a client who sells various vitamins on Amazon. I developed,

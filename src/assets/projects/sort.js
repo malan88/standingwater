@@ -3,6 +3,7 @@ const order = [
 //  'strata',
   'euler',
   'amazon',
+  'fiteyes',
   'languagemap',
   'roastuino',
   'duvall',

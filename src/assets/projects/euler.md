@@ -3,7 +3,7 @@ title: "Euler Sci Website"
 url: "https://euler-sci.com"
 featureImage: "./euler.jpg"
 short: "euler"
-category: "web"
+category: "frontend"
 tags: ["javascript", "react", "gatsby", "ssg", "photoshop"]
 ---
 This was a pretty simple project but turned out so beautiful I love it. It was

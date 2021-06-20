@@ -3,7 +3,7 @@ title: "standingwater.io & blog.standingwater.io"
 url: "https://blog.standingwater.io"
 featureImage: "./site.jpg"
 short: "stdwtr"
-category: web
+category: "frontend"
 tags: ["react", "javascript", "gatsby", "ssg"]
 ---
 ***Note: This refers to the previous iteration of this site***

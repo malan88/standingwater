@@ -3,7 +3,7 @@ title: "Language Map"
 url: "https://language-map.com"
 featureImage: "./languagemap.jpg"
 short: "languagemap"
-category: "web"
+category: "frontend"
 tags: ["python", "react", "beautifulsoup4", "scraping", "reactjs", "data", "pandas"]
 ---
 This project was inspired by a trend on [r/languagelearning][11] where

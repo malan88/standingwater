@@ -4,14 +4,23 @@ import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import order from '../assets/projects/sort';
-import { faMicrochip, faRobot, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLayerGroup,
+  faServer,
+  faDesktop,
+  faMicrochip,
+  faRobot,
+  faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const categories = {
   automation: faRobot,
-  web: faGlobe,
-  hardware: faMicrochip
+  frontend: faDesktop,
+  backend: faServer,
+  hardware: faMicrochip,
+  fullstack: faLayerGroup
+
 }
 const Body = styled.div`
   font-size: 1.2rem;
@@ -23,14 +32,14 @@ const IconFrame = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 2rem;
-  color: ${(props) => props.theme.colors.Blue};
+  color: ${(props) => props.theme.colors.Green};
   cursor: pointer;
   transition: color 0.35s ease-out;
   &:hover {
     color: ${(props) => props.theme.colors.Sienna};
   }
   &.active {
-    color: ${(props) => props.theme.colors.Green};
+    color: ${(props) => props.theme.colors.Blue};
   }
 `;
 const Icon = styled(FontAwesomeIcon)`

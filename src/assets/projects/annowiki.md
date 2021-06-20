@@ -3,7 +3,7 @@ title: "Intertextual Canon Cloud (anno.wiki)"
 url: "https://github.com/malan88/icc"
 featureImage: "./annowiki.png"
 short: "annowiki"
-category: "web"
+category: "fullstack"
 tags: ["python", "javascript", "flask", "etl", "heroku", "mariadb", "elasticsearch", "sqlalchemy", "jinja2"]
 ---
 The ICC is a web application designed to allow for collaboratively building an

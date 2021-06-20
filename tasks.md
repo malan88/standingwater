@@ -1,0 +1,7 @@
+- [ ] Landing Page
+- [ ] Smooth Scroll and scroll to top
+- [ ] Highlights side bar for quick scroll on projects and blog
+- [ ] Current projects
+- [ ] Add Perpetual Inventory
+- [ ] Socials and resume
+- [ ] 
