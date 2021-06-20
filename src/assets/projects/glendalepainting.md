@@ -20,14 +20,3 @@ Parallax is not the easiest to design, but it's a dumpster fire when you have to
 do it for mobile devices using background images instead of sprites.
 
 Never again. Just don't.
-
-- [GatsbyJS][0] static site
-- [react-spring][1] for parallax animation
-- [react-reveal][2] for transition animations
-- Deployed using [Netlify][3]
-
-[0]: https://www.gatsbyjs.org/
-[1]: https://www.react-spring.io/
-[2]: https://www.react-reveal.com/
-[3]: https://netlify.com/
-[4]: https://glendalepainting.com

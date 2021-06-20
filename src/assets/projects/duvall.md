@@ -43,13 +43,6 @@ maintain the SSG myself without worrying about it being no longer maintained.
 
 All the code for the site can be found at [malan88/duvall][2].
 
-- JavaScript
-- HTML
-- Sass
-- Sergey
-- Excel
-- Microsoft OneDrive
-
 [0]: https://sergey.cool/
 [1]: https://github.com/trys/sergey/pull/52
 [2]: https://github.com/malan88/duvall

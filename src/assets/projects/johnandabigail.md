@@ -28,12 +28,8 @@ reasons I can't recall now.
 - Bot to tweet the corpus of letters between [John and Abigail Adams][0]
 - Data scraped from NARA's [The Adams Papers][1] using [requests][2] and
   [BeautifulSoup4][3]
-- Built using [Tweepy][4]
-- Hosted as a lambda function on [AWS Lambda][5]
 - Use [AWS DynamoDB][6] to track place in corpus
 - Use [Netlify][7] to host the letters as static text files
-- [urllib3][8] to access the static text files
-- [Boto3][9] to access the DynamoDB tracking
 
 [0]: https://www.masshist.org/digitaladams/archive/letter/
 [1]: https://founders.archives.gov/about/Adams

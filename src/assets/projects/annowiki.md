@@ -18,7 +18,6 @@ cycle on this project, and it continues to teach me. It is currently maintained
 at [https://anno.wiki][0]. I am also currently working on a second iteration of
 the site.
 
-- Primarily coded in [Flask][1]/[SQLAlchemy][2]
 - Wrote many [ETL data pipeline scripts][3] for processing [Project
   Gutenberg][4] text files into custom JSON formats
 - [Heroku][5] for platform
