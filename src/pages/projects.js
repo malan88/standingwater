@@ -129,6 +129,7 @@ class ProjectPage extends React.Component {
         if (!categoryTagMap[node.frontmatter.category].includes(tag)) categoryTagMap[node.frontmatter.category].push(tag);
       })
     }
+    Object.keys(categoryTagMap).forEach((cat) => categoryTagMap[cat].sort()); // sort maps
     this.categoryTagMap = categoryTagMap;
     nodes.forEach(({node}) => node.frontmatter.tags.forEach((tag) => tags.add(tag)));
     this.tags = [...tags];
@@ -173,8 +174,18 @@ class ProjectPage extends React.Component {
   }
 
   clickCategoryHandler = (category) => {
-    if (this.state.selectedCategory===category) this.setState({selectedCategory: "", visibleTags: this.tags}, () => this.filterCategory());
-    else this.setState({selectedCategory: category, visibleTags: this.categoryTagMap[category]}, () => this.filterCategory());
+    if (this.state.selectedCategory===category)
+      this.setState({
+        selectedCategory: "",
+        selectedTags:[],
+        visibleTags: this.tags
+      }, () => this.filterCategory());
+    else
+      this.setState({
+        selectedCategory: category,
+        selectedTags: [],
+        visibleTags: this.categoryTagMap[category]
+      }, () => this.filterCategory());
   }
   filterCategory = () => {
     const nodes = this.nodes.slice();
