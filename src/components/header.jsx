@@ -1,11 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import HeronRaw from '../assets/svg/heron.svg'
+
+const Bar = styled.div`
+`;
+
+const Heron = styled(HeronRaw)`
+  float: right;
+`;
 
 const Nav = styled.nav`
-display: flex;
-align-items: center;
-`
+  float: left;
+  display: flex;
+  align-items: center;
+`;
 
 const NavLink = styled(Link)`
   margin: 1rem;
@@ -20,11 +29,16 @@ const NavLink = styled(Link)`
 `;
 const Header = () => {
   return (
-    <Nav>
-      <NavLink to="/">home</NavLink>
-      <NavLink to="/projects">projects</NavLink>
-      <NavLink to="/blog">blog</NavLink>
-    </Nav>
+    <Bar>
+      <Nav>
+        <NavLink to="/">home</NavLink>
+        <NavLink to="/projects">projects</NavLink>
+        <NavLink to="/blog">blog</NavLink>
+      </Nav>
+      <div style={{ float: "right" }}>
+        <Heron />
+      </div>
+    </Bar>
 
   )
 }

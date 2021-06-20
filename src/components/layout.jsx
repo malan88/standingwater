@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <Body>
         <Header />
-        <div>{children}</div>
+        <div style={{ clear: "both" }}>{children}</div>
       </Body>
     </ThemeProvider>
   )
