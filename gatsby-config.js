@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Standing Water",
+    siteUrl: "https://standingwater.io"
   },
   plugins: [
     "gatsby-plugin-styled-components",
