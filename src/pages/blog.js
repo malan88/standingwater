@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 const Body = styled.div`
-`
+`;
 const Box = styled.div`
   border-color: ${(props) => props.theme.colors.Charcoal};
   box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};
@@ -25,13 +25,12 @@ const Box = styled.div`
 `;
 const Title = styled.h2`
   font-family: ${(props) => props.theme.fonts.Heading};
-`
+`;
 const NakedLink = styled(Link)`
   color: black;
-`
+`;
 const Published = styled.h3`
-`
-
+`;
 
 const Blurb = (props) => {
   return (
