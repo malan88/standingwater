@@ -12,7 +12,7 @@ const BigText = styled.div`
   font-size: 4rem;
   margin: 3rem auto;
   margin-bottom: 10rem;
-  line-height: 4rem;
+  line-height: 4.3rem;
   letter-spacing: -1px;
   p {
     margin: 4rem 0;
@@ -44,20 +44,20 @@ const HeroPanel = () => {
       </p>
       <p>
         {"I'm"} a software developer from Central Florida obsessed with learning
-        new things. And <Emphasis>Standingwater</Emphasis> is my one-man agency.
-        My <Link to="/projects">projects page</Link> showcases my work, and my{" "}
-        <Link to="/blog">blog page</Link> showcases my thoughts. Also,
-        <br/>
+        new things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
+      </p>
+      <p>
+        If you're interested, my <Link to="/projects">projects page</Link>{" "}
+        showcases my work, and my <Link to="/blog">blog page</Link> showcases my
+        thoughts. Also,{" "}
         <a
           href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
           title="Resume"
         >
           here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
-        </a> and{" "}
-        <a
-          href="https://github.com/malan88"
-          title="GitHub"
-        >
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/malan88" title="GitHub">
           here's my GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />
         </a>
       </p>
