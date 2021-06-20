@@ -7,7 +7,18 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      plugins: [
+        {
+          resolve: "gatsby-remark-images",
+          options: {
+            maxWidth: 1200,
+          }
+        },
+        "gatsby-remark-emoji"
+      ]
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-fontawesome-css",

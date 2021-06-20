@@ -14,6 +14,7 @@ import '../assets/css/style.css';
 const Body = styled.main`
   width: 60%;
   margin: 0 auto;
+  font-family: ${(props) => props.theme.fonts.Text};
 `
 
 const Layout = ({ children }) => {

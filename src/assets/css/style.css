@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+:root {
+    --AmberLight:       #ffbf000F;
+    --Amber:            #ffbf00;
+    --Pink:             #e83f6f;
+    --Blue:             #2274a5;
+    --Emerald:          #32936f;
+    --EmeraldLight:     #32936f0F;
+    --White:            #ffffff;
+    --Charcoal:         #264653;
+    --Green:            #2a9d8f;
+    --Crayola:          #e9c46a;
+    --Brown:            #f4a261;
+    --Sienna:           #e76f51;
+
+}
+body {
+    font-size: 24px;
+}
 
 a {
     text-decoration: none;
     color: #2274a5;
 }
 p {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 ul {
     list-style: none;
@@ -14,7 +34,29 @@ ul {
 ul li::before {
     content: "> ";
 }
-li {
+ul li {
     text-indent: -1rem;
     margin-left:  1rem;
+}
+blockquote {
+    color: var(--Charcoal);
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-family: EB Garamond, Serif;
+    background-color: var(--AmberLight);
+    padding: 2rem;
+    border: 1px solid var(--Crayola);
+    border-radius: 20px;
+}
+hr {
+    border: 5px solid var(--Amber);
+    border-radius: 20px;
+    width: 5%;
+    margin: 5rem auto;
+}
+code {
+    font-family: Source Code Pro, Monospace;
+    font-size: 1rem;
+    margin: 0 auto;
 }

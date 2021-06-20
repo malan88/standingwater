@@ -7,12 +7,15 @@ import order from '../assets/projects/sort';
 import { faMicrochip, faRobot, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 const categories = {
   automation: faRobot,
   web: faGlobe,
   hardware: faMicrochip
 }
-
+const Body = styled.div`
+  font-size: 1.2rem;
+`
 const IconFrame = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +44,6 @@ const Text = styled.div`
   margin: 2rem auto;
 `;
 const Box = styled.div`
-  font-family: ${(props) => props.theme.fonts.Text};
   border-color: ${(props) => props.theme.colors.Charcoal};
   box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};
   border-radius: 20px;
@@ -72,38 +74,35 @@ const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: ${(props) => props.theme.fonts.Text};
 `;
 
 const Project = (props) => {
   return (
-    <div>
-      <Box>
-        {
-          props.image &&
-            <a href={props.url}>
-              <Image
-                alt={props.title}
-                image={props.image}
-                style={{ borderRadius: 20, overflow: "hidden" }}
-              />
-            </a>
-        }
-        <Text>
-          {props.tags.map((tag) => (
-            <Pill
-              key={tag + props.title}
-              className={props.selectedTags.includes(tag) ? "active" : ""}
-              onClick={() => props.clickTagHandler(tag)}
-            >
-              {tag}
-            </Pill>
-          ))}
-          <h1><a href={props.url}><FontAwesomeIcon icon={categories[props.category]}/> {props.title}</a></h1>
-          <div dangerouslySetInnerHTML={{__html: props.body}} />
-        </Text>
-      </Box>
-    </div>
+    <Box>
+      {
+        props.image &&
+          <a href={props.url}>
+            <Image
+              alt={props.title}
+              image={props.image}
+              style={{ borderRadius: 20, overflow: "hidden" }}
+            />
+          </a>
+      }
+      <Text>
+        {props.tags.map((tag) => (
+          <Pill
+            key={tag + props.title}
+            className={props.selectedTags.includes(tag) ? "active" : ""}
+            onClick={() => props.clickTagHandler(tag)}
+          >
+            {tag}
+          </Pill>
+        ))}
+        <h1><a href={props.url}><FontAwesomeIcon icon={categories[props.category]}/> {props.title}</a></h1>
+        <div dangerouslySetInnerHTML={{__html: props.body}} />
+      </Text>
+    </Box>
   )
 }
 
@@ -192,6 +191,7 @@ class ProjectPage extends React.Component {
   render() {
     return (
       <Layout>
+        <Body>
         <Tags>
           {Object.keys(categories).map((category) => (
             <IconFrame
@@ -229,6 +229,7 @@ class ProjectPage extends React.Component {
             />
           )
         )}
+        </Body>
       </Layout>
     )
   }

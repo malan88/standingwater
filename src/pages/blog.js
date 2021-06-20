@@ -5,10 +5,8 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 const Body = styled.div`
-  font-family: ${(props) => props.theme.fonts.Text};
 `
 const Box = styled.div`
-  font-family: ${(props) => props.theme.fonts.Text};
   border-color: ${(props) => props.theme.colors.Charcoal};
   box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};
   border-radius: 20px;
@@ -37,7 +35,7 @@ const Published = styled.h3`
 
 const Blurb = (props) => {
   return (
-    <NakedLink to="#">
+    <NakedLink to={props.slug}>
       <Box>
         <Title>{props.title}</Title>
         <Published>{props.date}</Published>
@@ -59,6 +57,7 @@ const BlogPage = ({ data }) => {
             title={node.frontmatter.title}
             date={node.frontmatter.date}
             excerpt={node.excerpt}
+            slug={node.fields.slug}
           />
         ))}
       </Body>

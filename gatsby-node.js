@@ -19,3 +19,26 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
   }
 };
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
+    query {
+      allMarkdownRemark( filter: {fields: {collection: {eq: "posts"}}}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  data.allMarkdownRemark.edges.forEach(edge => {
+    const slug = edge.node.fields.slug
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/post.js`),
+      context: { slug: slug },
+    })
+  })
+}
