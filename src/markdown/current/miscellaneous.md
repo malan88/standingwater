@@ -2,8 +2,8 @@
 title: "miscellaneous"
 url: null
 short: "government-sim"
-category: "data science"
-tags: ["python", "numpy"]
+category: "systems programming"
+tags: ["c", "python"]
 ---
 
 Lately, I've been learning C. Or re-learning, since I learned it (badly) years

@@ -26,5 +26,5 @@ so-on, and so-forth. Run simulations, see what percentage of laws get passed.
 It's been about a week since I hacked on it, and there's a bug that means the US
 passes every single law, but we're getting there. I'd like to run simulations on
 different distributions of political positions: right now it's Belle Curve
-shaped. I'd like to see what happens if political positions are well curve
+shaped. I'd like to see what happens if political positions are Well Curve
 shaped (i.e., polarized).

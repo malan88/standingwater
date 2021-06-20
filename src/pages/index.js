@@ -174,19 +174,56 @@ const Title = styled.a`
   font-weight: bold;
 `;
 
+const Box = styled.div`
+  border-color: ${(props) => props.theme.colors.Charcoal};
+  box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 3rem 0;
+  margin: 4rem auto;
+  h1 {
+    margin: 1rem 0;
+  }
+`;
+const Box2 = styled(Box)`
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.colors.Sienna};
+    background-color: ${(props) => props.theme.colors.Amber}0F;
+  }
+`
+const Text = styled.div`
+  width: 85%;
+  margin: 2rem auto;
+`;
+const BoxLink = styled.a`
+  color: black;
+  hover {
+    color: black;
+  }
+`;
+
+const Wrapper = ({ wrapper, condition, children }) =>
+  condition ? wrapper(children) : children;
+
 const Project = ({ project }) => {
-  console.log(project);
+  const url = project.frontmatter.url;
+  const Container = url == null ? Box : Box2;
+  console.log(url, Container);
   return (
-    <div style={{ marginTop: "3rem" }}>
-      {project.frontmatter.url != null ? (
-        <Title href={project.frontmatter.url}>
-          {project.frontmatter.title}
-        </Title>
-      ) : (
+    <Wrapper
+      condition={url != null}
+      wrapper={children => <BoxLink href={url}>{children}</BoxLink>}
+    >
+    <Container>
+      <Text>
         <h1>{project.frontmatter.title}</h1>
-      )}
-      <div dangerouslySetInnerHTML={{ __html: project.html }} />
-    </div>
+        <div dangerouslySetInnerHTML={{ __html: project.html }} />
+      </Text>
+    </Container>
+    </Wrapper>
   );
 };
 
