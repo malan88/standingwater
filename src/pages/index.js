@@ -169,11 +169,6 @@ const AboutPanel = () => {
   );
 };
 
-const Title = styled.a`
-  font-size: 3rem;
-  font-weight: bold;
-`;
-
 const Box = styled.div`
   border-color: ${(props) => props.theme.colors.Charcoal};
   box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};

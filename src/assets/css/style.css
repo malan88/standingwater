@@ -15,8 +15,8 @@
     --Crayola:          #e9c46a;
     --Brown:            #f4a261;
     --Sienna:           #e76f51;
-
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -41,16 +41,22 @@ ul li {
     text-indent: -1rem;
     margin-left:  1rem;
 }
-blockquote {
+pre, blockquote {
+    background-color: var(--AmberLight);
     color: var(--Charcoal);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid var(--Crayola);
+}
+blockquote {
     width: 90%;
     margin: 2rem auto;
     font-size: 1.5rem;
+    font-weight: bold;
     font-family: EB Garamond, Serif;
-    background-color: var(--AmberLight);
-    padding: 1rem 3rem;
-    border: 1px solid var(--Crayola);
-    border-radius: 20px;
+}
+pre {
+    overflow-x: auto;
 }
 hr {
     border: 5px solid var(--Amber);
@@ -60,6 +66,12 @@ hr {
 }
 code {
     font-family: Source Code Pro, Monospace;
-    font-size: 1rem;
     margin: 0 auto;
+    background-color: var(--AmberLight);
+    padding: 0.3rem;
+    border-radius: 20px;
+}
+pre code {
+    border: none;
+    background-color: transparent;
 }
