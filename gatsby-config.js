@@ -50,7 +50,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: "./src/assets/posts/",
+        path: "./src/markdown/posts/",
       },
       __key: "posts",
     },
@@ -58,7 +58,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "projects",
-        path: "./src/assets/projects/",
+        path: "./src/markdown/projects/",
       },
       __key: "projects",
     },

@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import order from '../assets/projects/sort';
+import order from '../markdown/projects/sort';
 import {
   faLayerGroup,
   faServer,

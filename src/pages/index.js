@@ -155,6 +155,7 @@ const AboutPanel = () => {
   );
 };
 
+
 const IndexPage = ({ data }) => {
   const bgpic = data.hero.childImageSharp.gatsbyImageData;
   return (
@@ -169,7 +170,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    hero: file(relativePath: { eq: "images/palmettos.jpg" }) {
+    hero: file(name: { eq: "palmettos" }) {
       childImageSharp {
         gatsbyImageData
       }
