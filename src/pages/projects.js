@@ -1,17 +1,18 @@
 import React from 'react';
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import order from '../assets/projects/sort';
-import { faUndo, faMicrochip, faRobot, faGlobe } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMicrochip, faRobot, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const categories = {
   automation: faRobot,
   web: faGlobe,
   hardware: faMicrochip
 }
+
 const IconFrame = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -21,9 +22,9 @@ const IconFrame = styled.div`
   margin: 2rem;
   color: ${(props) => props.theme.colors.Blue};
   cursor: pointer;
+  transition: color 0.35s ease-out;
   &:hover {
     color: ${(props) => props.theme.colors.Sienna};
-    transition: color 0.35s ease-out;
   }
   &.active {
     color: ${(props) => props.theme.colors.Green};
@@ -47,7 +48,6 @@ const Box = styled.div`
   border-style: solid;
   border-width: 2px;
   padding: 3rem 0;
-  width: 70%;
   margin: 4rem auto;
   h1 {
     margin: 1rem 0;
@@ -60,9 +60,9 @@ const Pill = styled.button`
   margin: 0.25rem;
   padding: 0.25rem 1rem;
   cursor: pointer;
+  transition: background-color 0.35s ease-out;
   &:hover {
     background-color: ${(props) => props.theme.colors.Sienna};
-    transition: background-color 0.35s ease-out;
   }
   &.active {
     background-color: ${(props) => props.theme.colors.Green};
@@ -192,45 +192,43 @@ class ProjectPage extends React.Component {
   render() {
     return (
       <Layout>
-        <main>
-          <Tags>
-            {Object.keys(categories).map((category) => (
-              <IconFrame
-                className={this.state.selectedCategory === category ? "active" : ""}
-                onClick={() => this.clickCategoryHandler(category)}
-                key={category + "root"}
-              >
-                <Icon size="3x"icon={categories[category]} />
-                {category}
-              </IconFrame>
-            ))}
-          </Tags>
-          <Tags>
-            {this.state.visibleTags.map((tag) => (
-              <Pill
-                className={this.state.selectedTags.includes(tag) ? "active" : ""}
-                onClick={() => this.clickTagHandler(tag)}
-                key={tag}>
-                {tag}
-              </Pill>
-            ))}
-          </Tags>
-          {this.state.visible.map(
-            ({node}) => (
-              <Project
-                key={node.id}
-                image={node.frontmatter.featureImage != null ? node.frontmatter.featureImage.childImageSharp.gatsbyImageData : null}
-                title={node.frontmatter.title}
-                body={node.html}
-                url={node.frontmatter.url}
-                category={node.frontmatter.category}
-                tags={node.frontmatter.tags}
-                selectedTags={this.state.selectedTags}
-                clickTagHandler={this.clickTagHandler}
-              />
-            )
-          )}
-        </main>
+        <Tags>
+          {Object.keys(categories).map((category) => (
+            <IconFrame
+              className={this.state.selectedCategory === category ? "active" : ""}
+              onClick={() => this.clickCategoryHandler(category)}
+              key={category + "root"}
+            >
+              <Icon size="3x"icon={categories[category]} />
+              {category}
+            </IconFrame>
+          ))}
+        </Tags>
+        <Tags>
+          {this.state.visibleTags.map((tag) => (
+            <Pill
+              className={this.state.selectedTags.includes(tag) ? "active" : ""}
+              onClick={() => this.clickTagHandler(tag)}
+              key={tag}>
+              {tag}
+            </Pill>
+          ))}
+        </Tags>
+        {this.state.visible.map(
+          ({node}) => (
+            <Project
+              key={node.id}
+              image={node.frontmatter.featureImage != null ? node.frontmatter.featureImage.childImageSharp.gatsbyImageData : null}
+              title={node.frontmatter.title}
+              body={node.html}
+              url={node.frontmatter.url}
+              category={node.frontmatter.category}
+              tags={node.frontmatter.tags}
+              selectedTags={this.state.selectedTags}
+              clickTagHandler={this.clickTagHandler}
+            />
+          )
+        )}
       </Layout>
     )
   }

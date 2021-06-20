@@ -11,7 +11,7 @@ import theme from '../global/theme';
 import '../assets/css/reset.css';
 import '../assets/css/style.css';
 
-const Body = styled.div`
+const Body = styled.main`
   width: 60%;
   margin: 0 auto;
 `
