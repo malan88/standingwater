@@ -3,6 +3,9 @@ import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const BigText = styled.div`
   font-family: ${(props) => props.theme.fonts.Header};
@@ -47,7 +50,20 @@ const HeroPanel = () => {
         {"I'm"} a software developer from Central Florida obsessed with learning
         new things. And <Emphasis>Standingwater</Emphasis> is my one-man agency.
         My <Link to="/projects">projects page</Link> showcases my work, and my{" "}
-        <Link to="/blog">blog page</Link> showcases my thoughts.
+        <Link to="/blog">blog page</Link> showcases my thoughts. Also,
+        <br/>
+        <a
+          href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
+          title="Resume"
+        >
+          here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
+        </a> and{" "}
+        <a
+          href="https://github.com/malan88"
+          title="GitHub"
+        >
+          here's my GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />
+        </a>
       </p>
       <p>
         But if you want to know who I am, keep scrolling.

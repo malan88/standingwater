@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import styled, { ThemeProvider } from 'styled-components';
 
 import Header from './header';
+import Footer from './footer';
 import meta from '../assets/data/meta';
 import theme from '../global/theme';
 
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <Body>
         <Header />
         <div style={{ clear: "both" }}>{children}</div>
+        <Footer />
       </Body>
     </ThemeProvider>
   )
