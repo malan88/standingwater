@@ -23,12 +23,6 @@ const Pill = styled.button`
   padding: 0.25rem 1rem;
   cursor: pointer;
   transition: background-color 0.35s ease-out;
-  &:hover {
-    background-color: ${(props) => props.theme.colors.Sienna};
-  }
-  &.active {
-    background-color: ${(props) => props.theme.colors.Green};
-  }
 `;
 
 const categories = {
