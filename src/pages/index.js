@@ -82,16 +82,16 @@ const HeroPanel = () => {
       </p>
       <p>
         My <Link to="/projects">projects</Link> show my work, and my{" "}
-        <Link to="/blog">blogs</Link> show my thoughts.{" "}
+        <Link to="/blog">blogs</Link> show my thoughts. Here's my{" "}
         <a
           href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
           title="Resume"
         >
-          Here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
+          résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
         </a>{" "}
-        and{" "}
+        and here's my{" "}
         <a href="https://github.com/malan88" title="GitHub">
-          here's my GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />
+          GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />.
         </a>
       </p>
       <p>
