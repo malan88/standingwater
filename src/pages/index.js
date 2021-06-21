@@ -47,14 +47,13 @@ const items = [
     things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
   </>,
   <>
-    If you're interested, my <Link to="/projects">projects page</Link> showcases
-    my work, and my <Link to="/blog">blog page</Link> showcases my thoughts.
-    Also,{" "}
+    My <Link to="/projects">projects page</Link> showcases my work, and my{" "}
+    <Link to="/blog">blog page</Link> showcases my thoughts.
     <a
       href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
       title="Resume"
     >
-      here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
+      Here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
     </a>{" "}
     and{" "}
     <a href="https://github.com/malan88" title="GitHub">
@@ -149,7 +148,7 @@ const PicturePanel = ({ bgpic }) => {
           have been a part of this landscape for hundreds of millions of years.
           These woods and their pooling waters have seen Timucua and Calusa,
           Appalachee and Seminoles, Spanish Conquistadores and French Huguenots,
-          bucanneers like José Gaspar, Haitian rebels like Georges Biassou,
+          buccaneers like José Gaspar, Haitian rebels like Georges Biassou,
           Cuban exiles, Puerto Rican refugees, and immigrants from all over the
           world. That is the Florida you don't see in brochures. <em>That</em>{" "}
           is <Emphasis2>Standingwater.</Emphasis2>
