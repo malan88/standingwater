@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import styled, { ThemeProvider } from 'styled-components';
+import { breakpoints } from "../global/breakpoints";
 
 import Header from './header';
 import Footer from './footer';
@@ -16,6 +17,9 @@ const Body = styled.main`
   width: 60%;
   margin: 0 auto;
   font-family: ${(props) => props.theme.fonts.Text};
+  ${breakpoints.vp10} { width: 80%; }
+  ${breakpoints.vp7} { width: 90%; }
+  ${breakpoints.vp3} { width: 95%; }
 `
 
 const Layout = ({ children }) => {

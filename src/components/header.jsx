@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { breakpoints } from "../global/breakpoints";
+
 import HeronRaw from '../assets/svg/heron.svg'
 
 const Bar = styled.div`
 `;
 
-const Heron = styled(HeronRaw)`
-  float: right;
-`;
 
 const Nav = styled.nav`
   float: left;
@@ -18,6 +17,9 @@ const Nav = styled.nav`
 
 const NavLink = styled(Link)`
   margin: 1rem;
+  ${breakpoints.vp4} {
+    margin: 0.5rem;
+  }
   color: black;
   font-size: 1.75rem;
   font-family: ${(props) => props.theme.fonts.Nav};
@@ -30,6 +32,21 @@ const NavLink = styled(Link)`
     color: ${(props) => props.theme.colors.Emerald};
   }
 `;
+const LogoSpan = styled.span`
+  vertical-align: -70px;
+  margin-right: -50px;
+  ${breakpoints.vp4} {
+    display: none;
+  }
+`
+const Heron = styled(HeronRaw)`
+  float: right;
+  ${breakpoints.vp4} {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+  }
+`;
 const Header = () => {
   return (
     <Bar>
@@ -39,7 +56,7 @@ const Header = () => {
         <NavLink activeClassName="active" to="/blog">blog</NavLink>
       </Nav>
       <div style={{ float: "right" }}>
-        <span style={{ verticalAlign: -70, marginRight: -50 }}>Standingwater</span>
+        <LogoSpan>Standingwater</LogoSpan>
         <Heron />
       </div>
     </Bar>

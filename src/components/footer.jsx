@@ -7,6 +7,7 @@ import {
   faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { breakpoints } from "../global/breakpoints";
 
 const links = {
   "GitHub": [faGithub, "https://github.com/malan88"],
@@ -21,6 +22,12 @@ const Bar = styled.div`
   width: 30%;
   margin: 5rem auto;
   justify-content: space-between;
+  ${breakpoints.vp12} {
+    width: 60%;
+  }
+  ${breakpoints.vp3} {
+    width: 95%;
+  }
 `;
 const Icon = styled(FontAwesomeIcon)`
 `

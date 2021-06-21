@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import styled from "styled-components";
 import { useTrail, a } from "@react-spring/web";
+import { breakpoints } from "../global/breakpoints";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -16,7 +17,8 @@ import {
   faDesktop,
   faMicrochip,
   faTerminal,
-  faRobot } from "@fortawesome/free-solid-svg-icons";
+  faRobot,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Pill = styled.button`
   border-radius: 50px;
@@ -26,6 +28,9 @@ const Pill = styled.button`
   padding: 0.25rem 1rem;
   cursor: pointer;
   transition: background-color 0.35s ease-out;
+  ${breakpoints.vp3} {
+    font-size: 1rem;
+  }
 `;
 
 const categories = {
@@ -47,6 +52,15 @@ const BigText = styled(a.div)`
   letter-spacing: -1px;
   p {
     margin: 4rem 0;
+  }
+  ${breakpoints.vp4} {
+    font-size: 3rem;
+  }
+  ${breakpoints.vp3} {
+    font-size: 2rem;
+    p {
+      margin: 3rem auto;
+    }
   }
 `;
 const Emphasis = styled.strong`
@@ -83,7 +97,7 @@ const items = [
     >
       résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
     </a>{" "}
-    and{" "} here's my{" "}
+    and here's my{" "}
     <a href="https://github.com/malan88" title="GitHub">
       GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />.
     </a>
@@ -120,7 +134,7 @@ const PictureText = styled.div`
   color: white;
   text-shadow: 2px 2px ${(props) => props.theme.colors.Charcoal};
   font-weight: 1000;
-  padding 10px 10px;
+  padding: 10px 10px;
 
   letter-spacing: -1px;
   text-align: justify;
@@ -128,6 +142,18 @@ const PictureText = styled.div`
   hyphens: auto;
   font-size: 4rem;
   line-height: 3.9rem;
+  ${breakpoints.vp7} {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  ${breakpoints.vp4} {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+  ${breakpoints.vp3} {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 `;
 
 const PicturePanel = ({ bgpic }) => {
@@ -200,15 +226,14 @@ const AboutPanel = () => {
         fascinated by how much deep thinking I had to do about the long term
         maintainability and expansibility of the project itself.
       </p>
-
       <p>
         In short, I fell in love with software. A few years later I started
         working in the industry. I've done contracts and W2s, frontend, backend,
-        and fullstack. I've done scrapers and hardware. But all I know is
-        this: I love the philosophy of it. The choices between static and
-        dynamic languages, opinionated and unopinionated frameworks, fast code
-        and readable code. Reading a book is a lot like listening to someone in
-        the past. Writing code is a lot like talking to someone in the future.
+        and fullstack. I've done scrapers and hardware. But all I know is this:
+        I love the philosophy of it. The choices between static and dynamic
+        languages, opinionated and unopinionated frameworks, fast code and
+        readable code. Reading a book is a lot like listening to someone in the
+        past. Writing code is a lot like talking to someone in the future.
       </p>
     </MediumText>
   );
@@ -224,6 +249,11 @@ const Box = styled.div`
   margin: 4rem auto;
   h1 {
     margin: 1rem 0;
+  }
+  ${breakpoints.vp3} {
+    margin: 2rem auto;
+    padding: 1rem 0;
+    font-size: 1.2rem;
   }
 `;
 const Box2 = styled(Box)`
@@ -248,6 +278,14 @@ const BoxLink = styled.a`
 const Wrapper = ({ wrapper, condition, children }) =>
   condition ? wrapper(children) : children;
 
+const CurrentH = styled.h1`
+  ${breakpoints.vp4} {
+    font-size: 2.4rem;
+  }
+  ${breakpoints.vp3} {
+    font-size: 2rem;
+  }
+`
 const Project = ({ project }) => {
   const url = project.frontmatter.url;
   const Container = url == null ? Box : Box2;
@@ -258,7 +296,10 @@ const Project = ({ project }) => {
     >
       <Container>
         <Text>
-          <h1><FontAwesomeIcon icon={categories[project.frontmatter.category]}/> {project.frontmatter.title}</h1>
+          <CurrentH>
+            <FontAwesomeIcon icon={categories[project.frontmatter.category]} />{" "}
+            {project.frontmatter.title}
+          </CurrentH>
           {project.frontmatter.tags.map((tag) => (
             <Pill key={project.id + tag}>{tag}</Pill>
           ))}
@@ -272,7 +313,7 @@ const Project = ({ project }) => {
 const CurrentProjects = ({ projects }) => {
   return (
     <div>
-      <h1>What I'm Working On</h1>
+      <CurrentH>What I'm Working On</CurrentH>
       {projects.map(({ node }) => (
         <Project project={node} key={node.id} />
       ))}
