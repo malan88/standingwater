@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -97,18 +97,17 @@ const items = [
 ];
 
 const HeroPanel = () => {
-  const ref = useRef();
-
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 250 },
     lineHeight: 1,
-    from: { lineHeight: 0 },
+    opacity: 1,
+    from: { lineHeight: 0, opacity: 0 },
   });
 
   return (
-    <BigText ref={ref}>
-      {trail.map(({ lineHeight }, index) => (
-        <a.p key={index} style={{ lineHeight }}>
+    <BigText>
+      {trail.map(({ lineHeight, opacity }, index) => (
+        <a.p key={index} style={{ lineHeight, opacity }}>
           {items[index]}
         </a.p>
       ))}
