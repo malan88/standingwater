@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+
 import styled from "styled-components";
+import { useTrail, a } from "@react-spring/web";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -35,7 +38,7 @@ const categories = {
   hardware: faMicrochip,
 };
 
-const BigText = styled.div`
+const BigText = styled(a.div)`
   font-family: ${(props) => props.theme.fonts.Header};
   font-size: 4rem;
   margin: 3rem auto;
@@ -53,47 +56,79 @@ const Emphasis2 = styled.strong`
   color: ${(props) => props.theme.colors.Emerald};
 `;
 
+const items = [
+  <>
+    <span role="img" ariaLabel="hand waving">
+      👋
+    </span>{" "}
+    Hi,
+  </>,
+  <>
+    {"I'm"} <Emphasis2>Michael Sendker</Emphasis2>, and this is{" "}
+    <Emphasis>Standingwater</Emphasis>.
+  </>,
+  <>
+    Really {"it's"} just me. <Emphasis>Standingwater LLC</Emphasis> is just me.
+  </>,
+  <>
+    {"I'm"} a software developer from Central Florida obsessed with learning new
+    things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
+  </>,
+  <>
+    My <Link to="/projects">projects</Link> show my work, and my{" "}
+    <Link to="/blog">blog</Link> shows my thoughts. Here's my{" "}
+    <a
+      href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
+      title="Resume"
+    >
+      résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
+    </a>{" "}
+    and{" "} here's my{" "}
+    <a href="https://github.com/malan88" title="GitHub">
+      GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />.
+    </a>
+  </>,
+  <>
+    But if you want to know who I am, keep scrolling.
+    <span role="img" ariaLabel="hand pointing down">
+      👇
+    </span>
+  </>,
+];
+
 const HeroPanel = () => {
+  const ref = useRef();
+  const [inViewport, setState] = useState(false);
+
+  useEffect(() => {
+    console.log(inViewport);
+    const element = ref.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (!inViewport) setState(true); },
+      {rootMargin: "0px"}
+    );
+
+    if (element != null) {
+      observer.observe(element);
+      return () => observer.unobserve(element);
+    }
+  }, [ref]);
+
+  const trail = useTrail(items.length, {
+    config: { mass: 1, tension: 2000, friction: 200 },
+    opacity: inViewport ? 1 : 0,
+    x: inViewport ? 20 : 0,
+    lineHeight: inViewport ? 1 : 0,
+    from: { opacity: 0, x: 20, lineHeight: 0 },
+  });
+
   return (
-    <BigText>
-      <p>
-        <span role="img" ariaLabel="hand waving">
-          👋
-        </span>{" "}
-        Hi,
-      </p>
-      <p>
-        {"I'm"} <Emphasis2>Michael Sendker</Emphasis2>, and this is{" "}
-        <Emphasis>Standingwater</Emphasis>.
-      </p>
-      <p>
-        Really {"it's"} just me. <Emphasis>Standingwater LLC</Emphasis> is just
-        me.
-      </p>
-      <p>
-        {"I'm"} a software developer from Central Florida obsessed with learning
-        new things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
-      </p>
-      <p>
-        My <Link to="/projects">projects</Link> show my work, and my{" "}
-        <Link to="/blog">blogs</Link> show my thoughts. Here's my{" "}
-        <a
-          href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
-          title="Resume"
-        >
-          résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
-        </a>{" "}
-        and here's my{" "}
-        <a href="https://github.com/malan88" title="GitHub">
-          GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />.
-        </a>
-      </p>
-      <p>
-        But if you want to know who I am, keep scrolling.
-        <span role="img" ariaLabel="hand pointing down">
-          👇
-        </span>
-      </p>
+    <BigText ref={ref}>
+      {trail.map(({ lineHeight }, index) => (
+        <a.p key={index} style={{ lineHeight }}>
+          {items[index]}
+        </a.p>
+      ))}
     </BigText>
   );
 };
@@ -234,7 +269,6 @@ const Wrapper = ({ wrapper, condition, children }) =>
 const Project = ({ project }) => {
   const url = project.frontmatter.url;
   const Container = url == null ? Box : Box2;
-  console.log(categories);
   return (
     <Wrapper
       condition={url != null}

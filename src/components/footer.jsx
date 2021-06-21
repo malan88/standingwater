@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <Bar>
       {Object.keys(links).map((key) => (
-        <a href={links[key][1]}>
+        <a key={key} href={links[key][1]}>
           <Icon title={key} icon={links[key][0]} size="2x" />
         </a>
       ))}

@@ -150,8 +150,8 @@ const SideBar = ({ visible }) => {
   return (
     <SideBarContainer>
       <Icon size="2x" onClick={() => toTop()} icon={faAngleDoubleUp} title="Scroll to top"/>
-      {visible.map(({ node }) => (
-        <SidebarLink href={`#${node.frontmatter.title}`}>{node.frontmatter.title}</SidebarLink>
+      {visible.map(({ node, i }) => (
+        <SidebarLink key={i} href={`#${node.frontmatter.title}`}>{node.frontmatter.title}</SidebarLink>
       ))}
       <Icon size="2x" onClick={() => toBottom()} icon={faAngleDoubleDown} title="Scroll to bottom"/>
     </SideBarContainer>
