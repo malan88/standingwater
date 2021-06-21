@@ -2,7 +2,7 @@
 title: "miscellaneous"
 url: null
 short: "government-sim"
-category: "systems programming"
+category: "systemsprogramming"
 tags: ["c", "python"]
 ---
 

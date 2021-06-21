@@ -2,7 +2,7 @@
 title: "government.py"
 url: "https://github.com/malan88/government"
 short: "government-sim"
-category: "data science"
+category: "datascience"
 tags: ["python", "numpy"]
 ---
 

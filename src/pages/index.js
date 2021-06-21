@@ -4,8 +4,42 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDatabase,
+  faFilePdf,
+  faLayerGroup,
+  faServer,
+  faDesktop,
+  faMicrochip,
+  faTerminal,
+  faRobot } from "@fortawesome/free-solid-svg-icons";
+
+const Pill = styled.button`
+  border-radius: 50px;
+  background-color: ${(props) => props.theme.colors.Amber};
+  border: none;
+  margin: 0.25rem;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.35s ease-out;
+  &:hover {
+    background-color: ${(props) => props.theme.colors.Sienna};
+  }
+  &.active {
+    background-color: ${(props) => props.theme.colors.Green};
+  }
+`;
+
+const categories = {
+  systemsprogramming: faTerminal,
+  datascience: faDatabase,
+  automation: faRobot,
+  fullstack: faLayerGroup,
+  frontend: faDesktop,
+  backend: faServer,
+  hardware: faMicrochip,
+};
 
 const BigText = styled.div`
   font-family: ${(props) => props.theme.fonts.Header};
@@ -47,14 +81,13 @@ const HeroPanel = () => {
         new things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
       </p>
       <p>
-        If you're interested, my <Link to="/projects">projects page</Link>{" "}
-        showcases my work, and my <Link to="/blog">blog page</Link> showcases my
-        thoughts. Also,{" "}
+        My <Link to="/projects">projects</Link> show my work, and my{" "}
+        <Link to="/blog">blogs</Link> show my thoughts.{" "}
         <a
           href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
           title="Resume"
         >
-          here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
+          Here's my résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
         </a>{" "}
         and{" "}
         <a href="https://github.com/malan88" title="GitHub">
@@ -109,7 +142,7 @@ const PicturePanel = ({ bgpic }) => {
           have been a part of this landscape for hundreds of millions of years.
           These woods and their pooling waters have seen Timucua and Calusa,
           Appalachee and Seminoles, Spanish Conquistadores and French Huguenots,
-          bucanneers like José Gaspar, Haitian rebels like Georges Biassou,
+          buccaneers like José Gaspar, Haitian rebels like Georges Biassou,
           Cuban exiles, Puerto Rican refugees, and immigrants from all over the
           world. That is the Florida you don't see in brochures. <em>That</em>{" "}
           is <Emphasis2>Standingwater.</Emphasis2>
@@ -159,10 +192,11 @@ const AboutPanel = () => {
 
       <p>
         In short, I fell in love with software. A few years later I started
-        working in the industry. I've done contracts and W2s. All I know is
+        working in the industry. I've done contracts and W2s, frontend, backend,
+        and fullstack. I've done scrapers and hardware. But all I know is
         this: I love the philosophy of it. The choices between static and
         dynamic languages, opinionated and unopinionated frameworks, fast code
-        and readable code. Reading a book is a lot like talking to someone in
+        and readable code. Reading a book is a lot like listening to someone in
         the past. Writing code is a lot like talking to someone in the future.
       </p>
     </MediumText>
@@ -188,7 +222,7 @@ const Box2 = styled(Box)`
     color: ${(props) => props.theme.colors.Sienna};
     background-color: ${(props) => props.theme.colors.Amber}0F;
   }
-`
+`;
 const Text = styled.div`
   width: 85%;
   margin: 2rem auto;
@@ -206,18 +240,21 @@ const Wrapper = ({ wrapper, condition, children }) =>
 const Project = ({ project }) => {
   const url = project.frontmatter.url;
   const Container = url == null ? Box : Box2;
-  console.log(url, Container);
+  console.log(categories);
   return (
     <Wrapper
       condition={url != null}
-      wrapper={children => <BoxLink href={url}>{children}</BoxLink>}
+      wrapper={(children) => <BoxLink href={url}>{children}</BoxLink>}
     >
-    <Container>
-      <Text>
-        <h1>{project.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: project.html }} />
-      </Text>
-    </Container>
+      <Container>
+        <Text>
+          <h1><FontAwesomeIcon icon={categories[project.frontmatter.category]}/> {project.frontmatter.title}</h1>
+          {project.frontmatter.tags.map((tag) => (
+            <Pill>{tag}</Pill>
+          ))}
+          <div dangerouslySetInnerHTML={{ __html: project.html }} />
+        </Text>
+      </Container>
     </Wrapper>
   );
 };
