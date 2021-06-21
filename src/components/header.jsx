@@ -26,14 +26,17 @@ const NavLink = styled(Link)`
     color: ${(props) => props.theme.colors.Blue};
     transition: color 0.25s ease-in;
   }
+  &.active {
+    color: ${(props) => props.theme.colors.Emerald};
+  }
 `;
 const Header = () => {
   return (
     <Bar>
       <Nav>
-        <NavLink to="/">home</NavLink>
-        <NavLink to="/projects">projects</NavLink>
-        <NavLink to="/blog">blog</NavLink>
+        <NavLink activeClassName="active" to="/">home</NavLink>
+        <NavLink activeClassName="active" to="/projects">projects</NavLink>
+        <NavLink activeClassName="active" to="/blog">blog</NavLink>
       </Nav>
       <div style={{ float: "right" }}>
         <span style={{ verticalAlign: -70, marginRight: -50 }}>Standingwater</span>
