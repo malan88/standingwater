@@ -98,28 +98,11 @@ const items = [
 
 const HeroPanel = () => {
   const ref = useRef();
-  const [inViewport, setState] = useState(false);
-
-  useEffect(() => {
-    console.log(inViewport);
-    const element = ref.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (!inViewport) setState(true); },
-      {rootMargin: "0px"}
-    );
-
-    if (element != null) {
-      observer.observe(element);
-      return () => observer.unobserve(element);
-    }
-  }, [ref]);
 
   const trail = useTrail(items.length, {
-    config: { mass: 1, tension: 2000, friction: 200 },
-    opacity: inViewport ? 1 : 0,
-    x: inViewport ? 20 : 0,
-    lineHeight: inViewport ? 1 : 0,
-    from: { opacity: 0, x: 20, lineHeight: 0 },
+    config: { mass: 5, tension: 2000, friction: 250 },
+    lineHeight: 1,
+    from: { lineHeight: 0 },
   });
 
   return (
