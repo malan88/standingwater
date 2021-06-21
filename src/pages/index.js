@@ -104,7 +104,8 @@ const items = [
     Oh, and my email is <Emphasis2>m at standingwater dot io</Emphasis2>
   </>,
   <>
-    But if you want to know who I am, keep scrolling.
+    But if you want to know how I think (and that's really what this is all
+    about, right?), then keep scrolling.
     <span role="img" aria-label="hand pointing down">
       👇
     </span>
