@@ -1,8 +1,8 @@
-- [ ] Landing Page
-- [ ] Smooth Scroll and scroll to top
-- [ ] Highlights side bar for quick scroll on projects and blog
-- [ ] Current projects
+- [X] Landing Page
+- [X] Smooth Scroll and scroll to top
+- [X] Highlights side bar for quick scroll on projects and blog
+- [X] Current projects
 - [ ] Add Perpetual Inventory
-- [ ] Socials and resume
+- [ ] Socials and resume (typos)
 - [ ] Category blurbs
 - [ ] Fix markdown images
