@@ -100,7 +100,8 @@ const items = [
     and here's my{" "}
     <a href="https://github.com/malan88" title="GitHub">
       GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />.
-    </a>
+    </a>{" "}
+    Oh, and my email is <Emphasis2>m at standingwater dot io</Emphasis2>
   </>,
   <>
     But if you want to know who I am, keep scrolling.
