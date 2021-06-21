@@ -70,6 +70,11 @@ hr {
     width: 5%;
     margin: 5rem auto;
 }
+@media only screen and (max-width: 481px) {
+    hr {
+        width: 20%;
+    }
+}
 code {
     font-family: Source Code Pro, Monospace;
     margin: 0 auto;
