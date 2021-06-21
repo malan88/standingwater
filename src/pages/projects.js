@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import order from "../markdown/projects/sort";
+import { breakpoints } from "../global/breakpoints";
 import {
   faLayerGroup,
   faServer,
@@ -11,7 +12,8 @@ import {
   faMicrochip,
   faRobot,
   faAngleDoubleUp,
-  faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
+  faAngleDoubleDown,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const categories = {
@@ -40,13 +42,25 @@ const IconFrame = styled.div`
   &.active {
     color: ${(props) => props.theme.colors.Blue};
   }
+  ${breakpoints.vp7} {
+    margin: 1rem;
+  }
 `;
-const Image = styled(GatsbyImage)`
+const ImageWrapper = styled.div`
+  width: 800px;
   margin: 0 auto;
+  ${breakpoints.vp12} { width: 500px; }
+  ${breakpoints.vp4} { width: 400px; }
+  ${breakpoints.vp3} { width: 280px; }
 `;
 const Text = styled.div`
   width: 85%;
   margin: 2rem auto;
+  ${breakpoints.vp3} {
+    margin: 1rem auto;
+    width: 90%;
+    font-size: 1.2rem;
+  }
 `;
 const Box = styled.div`
   border-color: ${(props) => props.theme.colors.Charcoal};
@@ -58,6 +72,12 @@ const Box = styled.div`
   margin: 4rem auto;
   h1 {
     margin: 1rem 0;
+  }
+  ${breakpoints.vp4} {
+    h1 { font-size: 2rem; }
+  }
+  ${breakpoints.vp3} {
+    h1 { font-size: 1.5rem; }
   }
 `;
 const Pill = styled.button`
@@ -74,6 +94,9 @@ const Pill = styled.button`
   &.active {
     background-color: ${(props) => props.theme.colors.Green};
   }
+  ${breakpoints.vp12} {
+    font-size: 1rem;
+  }
 `;
 const Tags = styled.div`
   display: flex;
@@ -86,11 +109,13 @@ const Project = (props) => {
     <Box id={props.id}>
       {props.image && (
         <a href={props.url}>
-          <Image
-            alt={props.title}
-            image={props.image}
-            style={{ borderRadius: 20, overflow: "hidden" }}
-          />
+          <ImageWrapper>
+            <GatsbyImage
+              alt={props.title}
+              image={props.image}
+              style={{ borderRadius: 20, overflow: "hidden" }}
+            />
+          </ImageWrapper>
         </a>
       )}
       <Text>
@@ -121,6 +146,9 @@ const SideBarContainer = styled.div`
   flex-direction: column;
   font-size: 1.2rem;
   font-family: ${(props) => props.theme.fonts.Title};
+  ${breakpoints.vp10} {
+    display: none;
+  }
 `;
 const SidebarLink = styled.a`
   width: 200px;
@@ -128,7 +156,8 @@ const SidebarLink = styled.a`
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-`
+`;
+const CategoryIcon = styled(FontAwesomeIcon)``;
 const Icon = styled(FontAwesomeIcon)`
   margin: 1rem auto;
   width: fit-content;
@@ -143,17 +172,29 @@ const Icon = styled(FontAwesomeIcon)`
 const SideBar = ({ visible }) => {
   const toBottom = () => {
     window.scroll(0, document.body.scrollHeight);
-  }
+  };
   const toTop = () => {
     window.scroll(0, 0);
-  }
+  };
   return (
     <SideBarContainer>
-      <Icon size="2x" onClick={() => toTop()} icon={faAngleDoubleUp} title="Scroll to top"/>
+      <Icon
+        size="2x"
+        onClick={() => toTop()}
+        icon={faAngleDoubleUp}
+        title="Scroll to top"
+      />
       {visible.map(({ node, i }) => (
-        <SidebarLink key={i} href={`#${node.frontmatter.title}`}>{node.frontmatter.title}</SidebarLink>
+        <SidebarLink key={i} href={`#${node.frontmatter.title}`}>
+          {node.frontmatter.title}
+        </SidebarLink>
       ))}
-      <Icon size="2x" onClick={() => toBottom()} icon={faAngleDoubleDown} title="Scroll to bottom"/>
+      <Icon
+        size="2x"
+        onClick={() => toBottom()}
+        icon={faAngleDoubleDown}
+        title="Scroll to bottom"
+      />
     </SideBarContainer>
   );
 };
@@ -279,7 +320,7 @@ class ProjectPage extends React.Component {
                 onClick={() => this.clickCategoryHandler(category)}
                 key={category + "root"}
               >
-                <FontAwesomeIcon size="3x" icon={categories[category]} />
+                <CategoryIcon size="3x" icon={categories[category]} />
                 {category}
               </IconFrame>
             ))}
@@ -338,9 +379,6 @@ export const query = graphql`
             featureImage {
               childImageSharp {
                 gatsbyImageData(
-                  layout: FIXED
-                  width: 600
-                  height: 200
                   quality: 90
                 )
               }
