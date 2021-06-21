@@ -58,7 +58,7 @@ const Emphasis2 = styled.strong`
 
 const items = [
   <>
-    <span role="img" ariaLabel="hand waving">
+    <span role="img" aria-label="hand waving">
       👋
     </span>{" "}
     Hi,
@@ -90,7 +90,7 @@ const items = [
   </>,
   <>
     But if you want to know who I am, keep scrolling.
-    <span role="img" ariaLabel="hand pointing down">
+    <span role="img" aria-label="hand pointing down">
       👇
     </span>
   </>,
@@ -260,7 +260,7 @@ const Project = ({ project }) => {
         <Text>
           <h1><FontAwesomeIcon icon={categories[project.frontmatter.category]}/> {project.frontmatter.title}</h1>
           {project.frontmatter.tags.map((tag) => (
-            <Pill>{tag}</Pill>
+            <Pill key={project.id + tag}>{tag}</Pill>
           ))}
           <div dangerouslySetInnerHTML={{ __html: project.html }} />
         </Text>
