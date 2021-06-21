@@ -68,28 +68,24 @@ const items = [
   </>,
 ];
 
-const useIntersection = (element, rootMargin) => {
-  const [isVisible, setState] = useState(false);
+const HeroPanel = () => {
+  const ref = useRef();
+  const [inViewport, setState] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         setState(entry.isIntersecting);
       },
-      { rootMargin }
+      {rootMargin: "0px"}
     );
 
-    element && observer.observe(element);
-
-    return () => observer.unobserve(element);
+    if (element != null) {
+      observer.observe(element);
+      return () => observer.unobserve(element);
+    }
   }, []);
-
-  return isVisible;
-};
-
-const HeroPanel = () => {
-  const ref = useRef();
-  const inViewport = useIntersection(ref, "0px");
 
   const trail = useTrail(items.length, {
     config: { mass: 1, tension: 2000, friction: 200 },

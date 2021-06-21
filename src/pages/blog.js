@@ -45,7 +45,6 @@ const Blurb = (props) => {
 }
 
 const BlogPage = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <Body>
