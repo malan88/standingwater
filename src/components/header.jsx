@@ -54,6 +54,7 @@ const Header = () => {
         <NavLink activeClassName="active" to="/">home</NavLink>
         <NavLink activeClassName="active" to="/projects">projects</NavLink>
         <NavLink activeClassName="active" to="/blog">blog</NavLink>
+        <NavLink activeClassName="active" to="/about">about</NavLink>
       </Nav>
       <div style={{ float: "right" }}>
         <LogoSpan>Standingwater</LogoSpan>

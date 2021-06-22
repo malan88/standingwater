@@ -71,5 +71,13 @@ module.exports = {
       },
       __key: "current",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "hobbies",
+        path: "./src/markdown/hobbies/",
+      },
+      __key: "hobbies",
+    },
   ],
 };
