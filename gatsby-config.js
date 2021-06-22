@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Standing Water",
+    title: "Standingwater",
     siteUrl: "https://standingwater.io"
   },
   plugins: [

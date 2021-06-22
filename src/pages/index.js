@@ -9,39 +9,7 @@ import { breakpoints } from "../global/breakpoints";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faDatabase,
-  faFilePdf,
-  faLayerGroup,
-  faServer,
-  faDesktop,
-  faMicrochip,
-  faTerminal,
-  faRobot,
-} from "@fortawesome/free-solid-svg-icons";
-
-const Pill = styled.button`
-  border-radius: 50px;
-  background-color: ${(props) => props.theme.colors.Amber};
-  border: none;
-  margin: 0.25rem;
-  padding: 0.25rem 1rem;
-  cursor: pointer;
-  transition: background-color 0.35s ease-out;
-  ${breakpoints.vp3} {
-    font-size: 1rem;
-  }
-`;
-
-const categories = {
-  systemsprogramming: faTerminal,
-  datascience: faDatabase,
-  automation: faRobot,
-  fullstack: faLayerGroup,
-  frontend: faDesktop,
-  backend: faServer,
-  hardware: faMicrochip,
-};
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 const BigText = styled(a.div)`
   font-family: ${(props) => props.theme.fonts.Header};
@@ -241,98 +209,14 @@ const AboutPanel = () => {
   );
 };
 
-const Box = styled.div`
-  border-color: ${(props) => props.theme.colors.Charcoal};
-  box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};
-  border-radius: 20px;
-  border-style: solid;
-  border-width: 2px;
-  padding: 3rem 0;
-  margin: 4rem auto;
-  h1 {
-    margin: 1rem 0;
-  }
-  ${breakpoints.vp3} {
-    margin: 2rem auto;
-    padding: 1rem 0;
-    font-size: 1.2rem;
-  }
-`;
-const Box2 = styled(Box)`
-  transition: 0.25s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    color: ${(props) => props.theme.colors.Sienna};
-    background-color: ${(props) => props.theme.colors.Amber}0F;
-  }
-`;
-const Text = styled.div`
-  width: 85%;
-  margin: 2rem auto;
-`;
-const BoxLink = styled.a`
-  color: black;
-  hover {
-    color: black;
-  }
-`;
-
-const Wrapper = ({ wrapper, condition, children }) =>
-  condition ? wrapper(children) : children;
-
-const CurrentH = styled.h1`
-  ${breakpoints.vp4} {
-    font-size: 2.4rem;
-  }
-  ${breakpoints.vp3} {
-    font-size: 2rem;
-  }
-`
-const Project = ({ project }) => {
-  const url = project.frontmatter.url;
-  const Container = url == null ? Box : Box2;
-  return (
-    <Wrapper
-      condition={url != null}
-      wrapper={(children) => <BoxLink href={url}>{children}</BoxLink>}
-    >
-      <Container>
-        <Text>
-          <CurrentH>
-            <FontAwesomeIcon icon={categories[project.frontmatter.category]} />{" "}
-            {project.frontmatter.title}
-          </CurrentH>
-          {project.frontmatter.tags.map((tag) => (
-            <Pill key={project.id + tag}>{tag}</Pill>
-          ))}
-          <div dangerouslySetInnerHTML={{ __html: project.html }} />
-        </Text>
-      </Container>
-    </Wrapper>
-  );
-};
-
-const CurrentProjects = ({ projects }) => {
-  return (
-    <div>
-      <CurrentH>What I'm Working On</CurrentH>
-      {projects.map(({ node }) => (
-        <Project project={node} key={node.id} />
-      ))}
-    </div>
-  );
-};
-
 const IndexPage = ({ data }) => {
   const bgpic = data.palmetto.childImageSharp.gatsbyImageData;
-  const md = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <div style={{ height: 1 }} />
       <HeroPanel />
       <PicturePanel bgpic={bgpic} />
       <AboutPanel />
-      <CurrentProjects projects={md} />
     </Layout>
   );
 };

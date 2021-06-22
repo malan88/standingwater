@@ -5,24 +5,10 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import order from "../markdown/projects/sort";
 import { breakpoints } from "../global/breakpoints";
-import {
-  faLayerGroup,
-  faServer,
-  faDesktop,
-  faMicrochip,
-  faRobot,
-  faAngleDoubleUp,
-  faAngleDoubleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleUp, faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import categories from '../global/categories'
 
-const categories = {
-  automation: faRobot,
-  fullstack: faLayerGroup,
-  frontend: faDesktop,
-  backend: faServer,
-  hardware: faMicrochip,
-};
 const Body = styled.div`
   font-size: 1.2rem;
 `;
