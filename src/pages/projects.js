@@ -50,7 +50,7 @@ const ImageWrapper = styled.div`
   width: 800px;
   margin: 0 auto;
   ${breakpoints.vp12} { width: 500px; }
-  ${breakpoints.vp4} { width: 400px; }
+  ${breakpoints.vp4} { width: 320px; }
   ${breakpoints.vp3} { width: 280px; }
 `;
 const Text = styled.div`
