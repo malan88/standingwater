@@ -25,6 +25,9 @@ const Bar = styled.div`
   ${breakpoints.vp12} {
     width: 60%;
   }
+  ${breakpoints.vp4} {
+    width: 80%;
+  }
   ${breakpoints.vp3} {
     width: 95%;
   }

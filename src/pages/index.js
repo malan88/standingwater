@@ -140,7 +140,7 @@ const PictureText = styled.div`
 
   letter-spacing: -1px;
   text-align: justify;
-  text-justify: inter-character;
+  word-break: break-all;
   hyphens: auto;
   font-size: 4rem;
   line-height: 3.9rem;
@@ -149,8 +149,8 @@ const PictureText = styled.div`
     line-height: 3.2rem;
   }
   ${breakpoints.vp4} {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   ${breakpoints.vp3} {
     font-size: 2rem;
