@@ -6,7 +6,7 @@ category: "fullstack"
 tags: ["react", "javascript", "flask", "elasticsearch", "sqlalchemy", "postgres"]
 ---
 
-This is the second iteration of the ICC (see below), with improved data
+This is the second iteration of the ICC (see projects), with improved data
 architecture and a single-page application front end based in React. Using
 Elasticsearch to store texts and PostgreSQL to store annotations and general
 application data allows for faster incremental searching. I also wrote more

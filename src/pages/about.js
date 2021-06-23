@@ -109,7 +109,7 @@ const Hobby = ({ hobby }) => {
   return (
     <Box>
       <Text>
-        <CurrentH>{hobby.frontmatter.short} {hobby.frontmatter.title}</CurrentH>
+        <CurrentH><span className="wave">{hobby.frontmatter.short}</span> {hobby.frontmatter.title}</CurrentH>
         <div dangerouslySetInnerHTML={{ __html: hobby.html }} />
       </Text>
     </Box>
@@ -129,7 +129,7 @@ const CurrentHobbies = ({ hobbies }) => {
         These are the hobbies I'm enjoying right now.
       </p>
       {hobbies.map(({ node }) => (
-        <Hobby hobby={node} key={node.ide} />
+        <Hobby hobby={node} key={node.id} />
       ))}
     </div>
   )
@@ -159,7 +159,10 @@ const AboutPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    current: allMarkdownRemark(filter: { fields: { collection: { eq: "current" } } }) {
+    current: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "current" } } },
+      sort: { fields: [frontmatter___title], order: ASC }
+    ) {
       edges {
         node {
           id
@@ -174,7 +177,11 @@ export const query = graphql`
         }
       }
     }
-    hobbies: allMarkdownRemark(filter: { fields: { collection: { eq: "hobbies" } } }) {
+    hobbies: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "hobbies" } } },
+      sort: { fields: [frontmatter___title], order: ASC }
+
+    ) {
       edges {
         node {
           id
