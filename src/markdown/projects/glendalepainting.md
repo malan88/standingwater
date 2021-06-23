@@ -4,7 +4,7 @@ url: "https://glendalepainting.netlify.app"
 featureImage: "./glendalepainting.jpg"
 short: "glendale"
 category: "frontend"
-tags: ["react", "javascript", "gatsby", "photoshop", "react-spring"]
+tags: ["react", "javascript", "gatsby", "photoshop", "react-spring", "graphql"]
 ---
 
 This site was built for my father's commercial painting company. It was my first

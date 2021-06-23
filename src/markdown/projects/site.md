@@ -4,7 +4,7 @@ url: "https://blog.standingwater.io"
 featureImage: "./site.jpg"
 short: "stdwtr"
 category: "frontend"
-tags: ["react", "javascript", "gatsby", "ssg"]
+tags: ["react", "javascript", "gatsby", "ssg", "netlify", "graphql"]
 ---
 ***Note: This refers to the previous iteration of this site***
 

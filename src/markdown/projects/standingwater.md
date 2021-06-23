@@ -4,7 +4,7 @@ url: "https://github.com/malan88/standingwater"
 featureImage: "./standingwater.png"
 short: "standingwater"
 category: "frontend"
-tags: ["react", "javascript", "gatsby", "ssg", "react-spring"]
+tags: ["react", "javascript", "gatsby", "ssg", "react-spring", "netlify", "graphql"]
 ---
 So I got sick of my old website!
 

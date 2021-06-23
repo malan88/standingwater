@@ -4,7 +4,7 @@ url: "https://ask.fiteyes.com"
 featureImage: "./fiteyes.png"
 short: "fiteyes"
 category: "backend"
-tags: ["django", "postgres"]
+tags: ["django", "postgres", "celery"]
 ---
 
 This web application was built upon [Biostar][0], an [open source question and

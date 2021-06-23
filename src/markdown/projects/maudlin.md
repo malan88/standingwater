@@ -4,7 +4,7 @@ url: "https://srv.stdwtr.io"
 featureImage: "./maudlin.png"
 short: "maudlin"
 category: "backend"
-tags: ["scrapy", "beautifulsoup4", "selenium", "flask", "sqlalchemy", "nltk"]
+tags: ["scrapy", "beautifulsoup4", "selenium", "flask", "sqlalchemy", "nltk", "materialize css", "postgres"]
 ---
 
 This was literally just something I wanted to do. I had written a lot of
