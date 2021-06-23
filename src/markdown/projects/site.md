@@ -1,5 +1,5 @@
 ---
-title: "standingwater.io & blog.standingwater.io"
+title: "standingwater.io v1"
 url: "https://blog.standingwater.io"
 featureImage: "./site.jpg"
 short: "stdwtr"
