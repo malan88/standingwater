@@ -7,7 +7,7 @@ import order from "../markdown/projects/sort";
 import { breakpoints } from "../global/breakpoints";
 import { faAngleDoubleUp, faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import categories from '../global/categories'
+import { categoriesSmall as categories } from '../global/categories'
 
 const Body = styled.div`
   font-size: 1.2rem;

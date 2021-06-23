@@ -9,14 +9,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 
-const categories = {
-  systemsprogramming: faTerminal,
-  datascience: faDatabase,
+export const categoriesSmall = {
   automation: faRobot,
   fullstack: faLayerGroup,
   frontend: faDesktop,
   backend: faServer,
   hardware: faMicrochip,
 };
+const categoriesLarge = {
+  systemsprogramming: faTerminal,
+  datascience: faDatabase,
+  ...categoriesSmall
+};
 
-export default categories;
+export default categoriesLarge;
