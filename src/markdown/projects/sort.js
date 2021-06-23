@@ -2,6 +2,7 @@ const order = [
   'annowiki',
   'standingwater',
 //  'strata',
+  'pi',
   'euler',
   'amazon',
   'fiteyes',
