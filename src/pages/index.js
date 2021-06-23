@@ -40,7 +40,7 @@ const Emphasis2 = styled.strong`
 
 const items = [
   <>
-    <span role="img" aria-label="hand waving">
+    <span role="img" className="wave" aria-label="hand waving">
       👋
     </span>{" "}
     Hi,
@@ -73,8 +73,8 @@ const items = [
   </>,
   <>
     But if you want to know how I think (and that's really what this is all
-    about, right?), then keep scrolling.
-    <span role="img" aria-label="hand pointing down">
+    about, right?), then keep scrolling.{" "}
+    <span role="img" className="point" aria-label="hand pointing down">
       👇
     </span>
   </>,
