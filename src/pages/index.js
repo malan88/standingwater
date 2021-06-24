@@ -235,6 +235,12 @@ const AboutPanel = () => {
         readable code. Reading a book is a lot like listening to someone in the
         past. Writing code is a lot like talking to someone in the future.
       </p>
+      <p>
+        If you agree, I hope to hear from you. Drop me a line. Say hi!{" "}
+        <span role="img" style={{ fontSize: "5rem", verticalAlign: -10 }} className="wave" aria-label="peace sign">
+          ✌️
+        </span>
+      </p>
     </MediumText>
   );
 };
