@@ -205,12 +205,15 @@ const AboutPanel = () => {
   return (
     <MediumText>
       <p>
-        The point is this: software is about timelessness and change. You have
-        to think about the past and the future, and the diversity of your
-        options. It's always in the back of your mind. Tech debt, project
-        structure, dependency choices. You have to think about who will inherit
-        your code, just as the Earth. It's all a careful game of timelessness
-        and change.
+        The point is this: software is about eternity{" "}
+        <span role="img" aria-label="eternal rock">
+          🪨
+        </span>{" "}
+        and <span className="change">change</span>. You have to think about the
+        past and the future, and the diversity of your options. It's always in
+        the back of your mind. Tech debt, project structure, dependency choices.
+        You have to think about who will inherit your code, just as the Earth.
+        It's all a careful game of eternity and change.
       </p>
       <Quote>
         Computer Science is Applied Math, and Software Engineering is Applied
@@ -230,14 +233,27 @@ const AboutPanel = () => {
         In short, I fell in love with software. A few years later I started
         working in the industry. I've done contracts and W2s, frontend, backend,
         and fullstack. I've done scrapers and hardware. But all I know is this:
-        I love the philosophy of it. The choices between static and dynamic
+        I love the philosophy of it. The choices between static and{" "}
+        <span className="dynamic" style={{ display: "inline-block" }}>
+          dynamic
+        </span>{" "}
         languages, opinionated and unopinionated frameworks, fast code and
-        readable code. Reading a book is a lot like listening to someone in the
-        past. Writing code is a lot like talking to someone in the future.
+        readable code. Is this one-liner too complex? Should I{" "}
+        <span style={{ color: "grey" }}>/* drop in a comment */</span> or just
+        rewrite it?
+      </p>
+      <p>
+        Reading a book is a lot like listening to someone in the past. Writing
+        code is a lot like talking to someone in the future.
       </p>
       <p>
         If you agree, I hope to hear from you. Drop me a line. Say hi!{" "}
-        <span role="img" style={{ fontSize: "5rem", verticalAlign: -10 }} className="wave" aria-label="peace sign">
+        <span
+          role="img"
+          style={{ fontSize: "5rem", verticalAlign: -10 }}
+          className="wave"
+          aria-label="peace sign"
+        >
           ✌️
         </span>
       </p>

@@ -1,0 +1,102 @@
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    /* Reset for the last half to pause */
+    100% { transform: rotate(0deg); }
+}
+
+.point {
+    animation-name: point-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 0.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes point-animation {
+    0% {    transform: translateY(0px); }
+    10% {   transform: translateY(10px); }
+    20% {   transform: translateY(20px); }
+    30% {   transform: translateY(25px); }
+    40% {   transform: translateY(28px); }
+    50% {   transform: translateY(30px); }
+    60% {   transform: translateY(32px); }
+    /* Reset for the last half to pause */
+    100% {  transform: translateY(0px); }
+}
+
+nav a:hover {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+}
+.clickTag:hover {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    /* Reset for the last half to pause */
+    100% { transform: rotate(0deg); }
+}
+
+.dynamic {
+    animation-name: dynamic-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 0.2s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+}
+@keyframes dynamic-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(5deg); }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-3deg); }
+    30% { transform: rotate(5deg); }
+    40% { transform: rotate(-1deg); }
+    50% { transform: rotate(3deg); }
+    60% { transform: rotate(0deg); }
+    /* Reset for the last half to pause */
+    100% { transform: rotate(0deg); }
+}
+
+.change {
+    text-align: center;
+
+    background: linear-gradient(to right, #000 20%, #FF0 40%, #00F 60%, #000 80%);
+    background-size: 200% auto;
+
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 1s linear infinite;
+}
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}

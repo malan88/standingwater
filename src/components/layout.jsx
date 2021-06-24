@@ -12,6 +12,7 @@ import theme from '../global/theme';
 
 import '../assets/css/reset.css';
 import '../assets/css/style.css';
+import '../assets/css/animations.css';
 
 const Body = styled.main`
   width: 60%;

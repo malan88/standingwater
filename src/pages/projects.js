@@ -108,7 +108,7 @@ const Project = (props) => {
         {props.tags.map((tag) => (
           <Pill
             key={tag + props.title}
-            className={props.selectedTags.includes(tag) ? "active" : ""}
+            className={`clickTag ${props.selectedTags.includes(tag) ? "active" : ""}`}
             onClick={() => props.clickTagHandler(tag)}
           >
             {tag}
@@ -300,9 +300,7 @@ class ProjectPage extends React.Component {
           <Tags>
             {Object.keys(categories).map((category) => (
               <IconFrame
-                className={
-                  this.state.selectedCategory === category ? "active" : ""
-                }
+                className={`clickTag ${this.state.selectedCategory === category ? "active" : ""}`}
                 onClick={() => this.clickCategoryHandler(category)}
                 key={category + "root"}
               >
@@ -314,9 +312,7 @@ class ProjectPage extends React.Component {
           <Tags>
             {this.state.visibleTags.map((tag) => (
               <Pill
-                className={
-                  this.state.selectedTags.includes(tag) ? "active" : ""
-                }
+                className={`clickTag ${this.state.selectedTags.includes(tag) ? "active" : ""}`}
                 onClick={() => this.clickTagHandler(tag)}
                 key={tag}
               >
