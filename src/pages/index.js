@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -16,6 +16,7 @@ const BigText = styled(a.div)`
   font-size: 4rem;
   margin: 3rem auto;
   margin-bottom: 10rem;
+  min-height: 70rem;
   line-height: 4.3rem;
   letter-spacing: -1px;
   p {
@@ -125,10 +126,43 @@ const PictureText = styled.div`
     line-height: 2rem;
   }
 `;
+const tmp = `
+Palmettos and slash pine, Muscadine running wild and ibises probing the damp
+ground after a thunderstorm. Standing water and mosquitos have been a part of
+this landscape for hundreds of millions of years.  These woods and their pooling
+waters have seen Timucua and Calusa, Appalachee and Seminoles, Spanish
+Conquistadores and French Huguenots, buccaneers like José Gaspar, Haitian rebels
+like Georges Biassou, Cuban exiles, Puerto Rican refugees, and immigrants from
+all over the world. That is the Florida you don't see in brochures.`;
+const pictureText = [];
+for (let word of tmp.split(" ")) pictureText.push(word + " ");
+const extra = [<em>That</em>, " is ", <Emphasis2>Standingwater.</Emphasis2>];
 
 const PicturePanel = ({ bgpic }) => {
+  const items = [...pictureText, ...extra];
+  const ref = useRef();
+  const [open, set] = useState(false);
+  const trail = useTrail(items.length, {
+    config: { mass: 5, tension: 2000, friction: 200 },
+    x: open ? 0 : 20,
+    height: open ? 1 : 0,
+    opacity: open ? 1 : 0,
+    from: { x: 20, height: 0, opacity: 0 },
+  });
+  const observer = new IntersectionObserver(([entry]) => {
+    if (!open) set(entry.isIntersecting);
+  }, {});
+
+  useEffect(() => {
+    console.log("Triggering");
+    observer.observe(ref.current);
+    return () => {
+      observer.disconnect();
+    };
+  });
+
   return (
-    <div style={{ display: "grid" }}>
+    <div ref={ref} style={{ display: "grid" }}>
       <GatsbyImage
         style={{ gridArea: "1/1" }}
         layout="fullWidth"
@@ -144,15 +178,11 @@ const PicturePanel = ({ bgpic }) => {
         }}
       >
         <PictureText>
-          Palmettos and slash pine, Muscadine running wild and ibises probing
-          the damp ground after a thunderstorm. Standing water and mosquitos
-          have been a part of this landscape for hundreds of millions of years.
-          These woods and their pooling waters have seen Timucua and Calusa,
-          Appalachee and Seminoles, Spanish Conquistadores and French Huguenots,
-          buccaneers like José Gaspar, Haitian rebels like Georges Biassou,
-          Cuban exiles, Puerto Rican refugees, and immigrants from all over the
-          world. That is the Florida you don't see in brochures. <em>That</em>{" "}
-          is <Emphasis2>Standingwater.</Emphasis2>
+          {trail.map(({ height, opacity }, i) => (
+            <a.span key={i} style={{ opacity: opacity }}>
+              {items[i]}
+            </a.span>
+          ))}
         </PictureText>
       </div>
     </div>
