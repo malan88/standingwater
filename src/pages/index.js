@@ -149,11 +149,11 @@ const PicturePanel = ({ bgpic }) => {
     opacity: open ? 1 : 0,
     from: { x: 20, height: 0, opacity: 0 },
   });
-  const observer = new IntersectionObserver(([entry]) => {
-    if (!open) set(entry.isIntersecting);
-  }, {});
 
   useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!open) set(entry.isIntersecting);
+    }, {});
     console.log("Triggering");
     observer.observe(ref.current);
     return () => {
