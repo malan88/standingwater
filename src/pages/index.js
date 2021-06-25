@@ -54,7 +54,7 @@ const items = [
     Really {"it's"} just me. <Emphasis>Standingwater LLC</Emphasis> is just me.
   </>,
   <>
-    {"I'm"} a software developer from Central Florida obsessed with learning new
+    {"I'm"} a generalist software developer from Central Florida obsessed with learning new
     things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
   </>,
   <>
@@ -243,8 +243,8 @@ const AboutPanel = () => {
         rewrite it?
       </p>
       <p>
-        Reading a book is a lot like listening to someone in the past. Writing
-        code is a lot like talking to someone in the future.
+        Writing a book is a lot like talking to someone in the future. Writing
+        software is more like <em>working</em> with someone in the future.
       </p>
       <p>
         If you agree, I hope to hear from you. Drop me a line. Say hi!{" "}
