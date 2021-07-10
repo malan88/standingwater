@@ -34,4 +34,4 @@ any two points in hex color space as points on a graph and to find the point in
 the gradient you just take the distance. The code's [here][0], if you want to
 see it.
 
-[0]: https://github.com/malan88/maudlin/blob/51ee8c60aa8e4ab5328d981cbd45ec670451d32b/newscrawler/utils.py#L11-L18
+[0]: https://github.com/mas-4/maudlin/blob/51ee8c60aa8e4ab5328d981cbd45ec670451d32b/newscrawler/utils.py#L11-L18

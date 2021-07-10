@@ -1,6 +1,6 @@
 ---
 title: "gobble.py"
-url: "https://github.com/malan88/gobble"
+url: "https://github.com/mas-4/gobble"
 short: "gobble"
 category: "automation"
 tags: ["security", "python"]
@@ -20,4 +20,4 @@ in the security phrase, the operator would hopefully at least require that.
 A better solution would be to just use diceware, but where's the fun in that?
 
 [0]: https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt
-[1]: https://github.com/malan88/gobble#background
+[1]: https://github.com/mas-4/gobble#background

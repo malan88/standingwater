@@ -54,20 +54,21 @@ const items = [
     Really {"it's"} just me. <Emphasis>Standingwater LLC</Emphasis> is just me.
   </>,
   <>
-    {"I'm"} a generalist software developer from Central Florida obsessed with learning new
-    things. <Emphasis>Standingwater</Emphasis> is my one-man agency.
+    {"I'm"} a generalist software developer from Central Florida obsessed with
+    learning new things. <Emphasis>Standingwater</Emphasis> is my one-man
+    agency.
   </>,
   <>
     My <Link to="/projects">projects</Link> show my work, and my{" "}
     <Link to="/blog">blog</Link> shows my thoughts. Here's my{" "}
     <a
-      href="https://raw.githubusercontent.com/malan88/resume/master/main.pdf"
+      href="https://raw.githubusercontent.com/mas-4/resume/master/main.pdf"
       title="Resume"
     >
       résumé <FontAwesomeIcon title="Résumé" icon={faFilePdf} />
     </a>{" "}
     and here's my{" "}
-    <a href="https://github.com/malan88" title="GitHub">
+    <a href="https://github.com/mas-4" title="GitHub">
       GitHub <FontAwesomeIcon title="GitHub" icon={faGithub} />.
     </a>{" "}
     Oh, and my email is <Emphasis2>m at standingwater dot io</Emphasis2>

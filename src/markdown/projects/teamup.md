@@ -1,6 +1,6 @@
 ---
 title: "teamup.py"
-url: "https://github.com/malan88/teamup"
+url: "https://github.com/mas-4/teamup"
 short: "teamup"
 category: "automation"
 tags: ["combinatronics", "good enough results", "python"]

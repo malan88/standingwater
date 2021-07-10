@@ -1,6 +1,6 @@
 ---
 title: "vote.py"
-url: "https://github.com/malan88/vote"
+url: "https://github.com/mas-4/vote"
 short: "vote"
 category: "automation"
 tags: ["twilio", "civics", "aws ec2", "python"]

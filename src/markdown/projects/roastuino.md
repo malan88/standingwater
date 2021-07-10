@@ -1,6 +1,6 @@
 ---
 title: "Roastuino"
-url: "https://github.com/malan88/coffee-roaster/"
+url: "https://github.com/mas-4/coffee-roaster/"
 featureImage: "./roastuino.jpg"
 short: "roastuino"
 category: "hardware"
@@ -46,4 +46,4 @@ soldering. It was a lot easier than I expected.
 [0]: https://www.sweetmarias.com
 [1]: https://medium.com/@lukasgrasse/how-to-make-an-arduino-controlled-coffee-roaster-f6a3334fd7d5
 [2]: https://artisan-scope.org/
-[3]: https://github.com/malan88/coffee-roaster/blob/master/roastuino/roastuino.ino
+[3]: https://github.com/mas-4/coffee-roaster/blob/master/roastuino/roastuino.ino

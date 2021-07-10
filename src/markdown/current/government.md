@@ -1,6 +1,6 @@
 ---
 title: "government.py"
-url: "https://github.com/malan88/government"
+url: "https://github.com/mas-4/government"
 short: "government-sim"
 category: "datascience"
 tags: ["python", "numpy"]

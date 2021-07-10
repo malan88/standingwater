@@ -1,6 +1,6 @@
 ---
 title: "Generated Anki decks"
-url: "https://github.com/malan88/minimalpairs"
+url: "https://github.com/mas-4/minimalpairs"
 featureImage: "./anki.jpg"
 short: "anki"
 category: "automation"
@@ -44,5 +44,5 @@ combinatorial explosion of comparing minimal pairs.
 [2]: https://requests.readthedocs.io/en/master/
 [3]: https://www.crummy.com/software/BeautifulSoup/
 [4]: https://ankiweb.net/shared/info/1704367316
-[5]: https://github.com/malan88/minimalpairs
+[5]: https://github.com/mas-4/minimalpairs
 [6]: https://ankiweb.net/shared/info/1704367316

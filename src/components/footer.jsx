@@ -12,14 +12,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { breakpoints } from "../global/breakpoints";
 
 const links = {
-  GitHub: [faGithub, "https://github.com/malan88"],
-  StackOverflow: [faStackOverflow, "https://stackoverflow.com/story/malan88"],
-  Keybase: [faKeybase, "https://keybase.io/m88"],
-  HackerRank: [faHackerrank, "https://www.hackerrank.com/mas88?hr_r=1"],
+  GitHub: [faGithub, "https://github.com/mas-4"],
+  StackOverflow: [faStackOverflow, "https://stackoverflow.com/story/mas4"],
   LinkedIn: [faLinkedin, "https://www.linkedin.com/michael-sendker"],
   Résumé: [
     faFilePdf,
-    "https://raw.githubusercontent.com/malan88/resume/master/main.pdf",
+    "https://raw.githubusercontent.com/mas-4/resume/master/main.pdf",
   ],
 };
 
@@ -35,7 +33,7 @@ const Width = styled.div`
   ${breakpoints.vp3} {
     width: 100%;
   }
-`
+`;
 
 const Bar = styled(Width)`
   display: flex;

@@ -3,7 +3,7 @@ title: "lambda_function.lambda_handler"
 date: "2020-06-27"
 ---
 
-I made a bot. [@john\_and\_abbie][0].
+I made a bot. [@john_and_abbie][0].
 
 It tweets lines from the letters of John and Abigail Adams. All of them. In
 order. It should take a bit over 109 days to loop. If I did my math right, there
@@ -42,7 +42,7 @@ other resource without authentication. I had to install the AWS cli and
 authenticate my computer to access those resources while developing on my
 computer, but that's transparent once it's done.
 
-A third sticking point was how to package dependencies. And even *that* was far
+A third sticking point was how to package dependencies. And even _that_ was far
 more easy than I'd expected. Lambda automatically exposes `Boto3` and `urllib3`
 (so I switched to `urllib3` in the script from my preferred `requests`; I'm
 going to investigate `urllib3` more now, though, because I'm always interested
@@ -57,18 +57,18 @@ Learning any new platform can be confusing and frustrating. I remember getting a
 little upset with Heroku in the beginning but ended up finding it to be pretty
 easy once I got the hang of it. There were more than a few times, as I got going
 with AWS this time around (my only previous experience was with an ec2 instance
-for [vote.py][3]) where I growled in frustration at having to learn something, and
-something else to get it to work, and something else to get *that* to work
+for [vote.py][3]) where I growled in frustration at having to learn something,
+and something else to get it to work, and something else to get _that_ to work
 (the full chain of dependency seems like this: Cloudwatch -> Lambda ->
-Permissions Policy -> DynamoDB). It began to feel a bit like
-[dependency hell][1]. But I guess, at the end of the day, that's just how you
-start to break into a complex system of microservices. You have to yakshave with
-dependency hell for a little bit before you feel comfortable.
+Permissions Policy -> DynamoDB). It began to feel a bit like [dependency
+hell][1]. But I guess, at the end of the day, that's just how you start to break
+into a complex system of microservices. You have to yakshave with dependency
+hell for a little bit before you feel comfortable.
 
 After all that, I can say I kind of like AWS. Kind of, I say, because one thing
 I was and continue to be bothered by is the lack of git integration. With
 Netlify and Heroku git is (or can be) a principle part of deployment. This is a
-very developer-first attitude. There are so few developers that *don't* use git
+very developer-first attitude. There are so few developers that _don't_ use git
 that it feels almost like a given that a modern serverless system will allow
 deployment via git. But not AWS. It's deployment via zip, and I'm not the
 biggest fan. It took all of a minute to write a simple [Makefile][2] to automate
@@ -78,5 +78,5 @@ Anyway, follow my bot.
 
 [0]: https://twitter.com/john_and_abbie
 [1]: https://en.wikipedia.org/wiki/Dependency_hell
-[2]: https://github.com/malan88/johnandabigail/blob/master/Makefile
+[2]: https://github.com/mas-4/johnandabigail/blob/master/Makefile
 [3]: /20200611-100614/

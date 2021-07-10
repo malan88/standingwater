@@ -41,8 +41,8 @@ automatically exposes to the network using 0.0.0.0. Unfortunately, the
 maintainer still hasn't merged it. Luckily, it's lightweight enough that I can
 maintain the SSG myself without worrying about it being no longer maintained.
 
-All the code for the site can be found at [malan88/duvall][2].
+All the code for the site can be found at [mas-4/duvall][2].
 
 [0]: https://sergey.cool/
 [1]: https://github.com/trys/sergey/pull/52
-[2]: https://github.com/malan88/duvall
+[2]: https://github.com/mas-4/duvall

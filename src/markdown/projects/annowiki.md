@@ -1,6 +1,6 @@
 ---
 title: "Intertextual Canon Cloud (anno.wiki)"
-url: "https://github.com/malan88/icc"
+url: "https://github.com/mas-4/icc"
 featureImage: "./annowiki.png"
 short: "annowiki"
 category: "fullstack"
@@ -32,7 +32,7 @@ the site.
 [0]: https://anno.wiki
 [1]: https://flask.palletsprojects.com/en/1.1.x/
 [2]: https://www.sqlalchemy.org/
-[3]: https://github.com/malan88/texts/tree/master/processor
+[3]: https://github.com/mas-4/texts/tree/master/processor
 [4]: http://www.gutenberg.org/
 [5]: https://www.heroku.com/
 [6]: https://mariadb.org/

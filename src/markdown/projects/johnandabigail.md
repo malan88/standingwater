@@ -1,6 +1,6 @@
 ---
 title: "Letters of John and Abigail Adams Twitterbot"
-url: "https://github.com/malan88/johnandabigail"
+url: "https://github.com/mas-4/johnandabigail"
 featureImage: "./john_and_abbie.png"
 short: "john"
 category: "automation"
@@ -41,5 +41,5 @@ reasons I can't recall now.
 [7]: https://johnandabigail.netlify.app/1777-04-02-0-john.txt
 [8]: https://urllib3.readthedocs.io/en/latest/
 [9]: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
-[10]: https://github.com/malan88/johnandabigail
+[10]: https://github.com/mas-4/johnandabigail
 [11]: https://hyperallergic.com/572035/historical-painting-is-altered-to-show-most-declaration-of-independence-signatories-were-enslavers/

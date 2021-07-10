@@ -155,12 +155,12 @@ Since I didn't want to copy and paste and save and re-open excel 53 times (there
 are 53 tables) I gave up and went searching for a new solution.
 
 There are a number of resources for doing this, but the one that I was most
-shocked by was Google Sheets. Some googling dropped me on [this lovely
-answer on opendata.stackexchange.com][12] that talks about `=importHTML()` in
-Google Sheets. I tried it out and it works incredibly. My next step was to find
-out how to automate the import for all 53 tables. Turns out there's a library
-for automating Google Sheets: [gspread][13]. So the Wikipedia page turned out to
-be way easier than I expected.
+shocked by was Google Sheets. Some googling dropped me on [this lovely answer on
+opendata.stackexchange.com][12] that talks about `=importHTML()` in Google
+Sheets. I tried it out and it works incredibly. My next step was to find out how
+to automate the import for all 53 tables. Turns out there's a library for
+automating Google Sheets: [gspread][13]. So the Wikipedia page turned out to be
+way easier than I expected.
 
 I used gspread to automatically generate 53 worksheets in a single spreadsheet
 with variations only on the table number. Something like this did it for me:
@@ -190,9 +190,9 @@ the response time was with some 500 check boxes on one page so looked into
 alternative input options. Luckily material ui has a great set of [Autocomplete
 components so I ended up using one of those][15]
 
-And then it was done. I bought a \$15 domain name for it, [language-map.com][16],
-and hosted it up on netlify. For some reason I had some trouble with the dns
-clearing but it worked out this morning.
+And then it was done. I bought a \$15 domain name for it,
+[language-map.com][16], and hosted it up on netlify. For some reason I had some
+trouble with the dns clearing but it worked out this morning.
 
 So anyway, that's it, my dramatization of this past weekend. I am going to post
 about it sometime this week on r/languagelearning and hopefully I get a
@@ -205,20 +205,24 @@ to make a bot. That'll probably be my next write up.
 I'd also like to eventually post some stuff on my dotfiles set up. We'll see.
 
 [0]: https://www.reddit.com/r/languagelearning/
-[1]: https://www.reddit.com/r/languagelearning/comments/dmeea5/map_of_the_languages_i_speak_rmapporn_xpost/f4zxvf3/?context=3
+[1]:
+  https://www.reddit.com/r/languagelearning/comments/dmeea5/map_of_the_languages_i_speak_rmapporn_xpost/f4zxvf3/?context=3
 [2]: https://www.react-simple-maps.io/
 [3]: https://www.react-simple-maps.io/examples/world-choropleth-mapchart/
-[4]: https://github.com/malan88/topojson/blob/master/world-countries-sans-antarctica.json
-[5]: https://en.wikipedia.org/wiki/List_of_official_languages_by_country_and_territory
+[4]:
+  https://github.com/mas-4/topojson/blob/master/world-countries-sans-antarctica.json
+[5]:
+  https://en.wikipedia.org/wiki/List_of_official_languages_by_country_and_territory
 [6]: https://en.wikipedia.org/wiki/List_of_countries_by_spoken_languages
 [7]: https://www.worlddata.info/languages/index.php
 [8]: http://pubproxy.com/
 [9]: https://scrapestack.com
-[10]: https://www.reddit.com/r/languagelearningjerk/comments/gt7h7o/do_you_only_know_one_joke_youll_love_ruzbek/
+[10]:
+  https://www.reddit.com/r/languagelearningjerk/comments/gt7h7o/do_you_only_know_one_joke_youll_love_ruzbek/
 [11]: https://wikitable2csv.ggor.de/
 [12]: https://opendata.stackexchange.com/a/828
 [13]: https://gspread.readthedocs.io/en/latest/
-[14]: https://github.com/malan88/languagemap_data/blob/master/generate_json.py
+[14]: https://github.com/mas-4/languagemap_data/blob/master/generate_json.py
 [15]: https://material-ui.com/components/autocomplete/
 [16]: https://language-map.com
 [17]: https://twitter.com/jbf1755/status/1274018121716764672

@@ -1,6 +1,6 @@
 ---
 title: "standingwater.io v2"
-url: "https://github.com/malan88/standingwater"
+url: "https://github.com/mas-4/standingwater"
 featureImage: "./standingwater.png"
 short: "standingwater"
 category: "frontend"
