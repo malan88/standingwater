@@ -240,8 +240,8 @@ const AboutPanel = () => {
         </span>{" "}
         languages, opinionated and unopinionated frameworks, fast code and
         readable code. Is this one-liner too complex? Should I{" "}
-        <span style={{ color: "grey" }}>/* drop in a comment */</span> or just
-        rewrite it?
+        <span style={{ color: "grey" }}>{"/* drop in a comment */"}</span> or
+        just rewrite it?
       </p>
       <p>
         Writing a book is a lot like talking to someone in the future. Writing
