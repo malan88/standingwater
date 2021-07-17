@@ -3,8 +3,6 @@ import styled from "styled-components";
 import {
   faGithub,
   faStackOverflow,
-  faHackerrank,
-  faKeybase,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
