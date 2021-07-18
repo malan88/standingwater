@@ -1,5 +1,5 @@
 ---
-title: "Power, Politics, Capitalism, and Political Persuasion"
+title: "Understanding Politics"
 date: "2021-07-17"
 ---
 
@@ -12,18 +12,11 @@ their people are by nature][0]. It doesn't work yet. It basically says the USA
 is 100% liberal because it passes every proposed law. Obviously I have a bug.
 But it's fun, and interesting.
 
-Recently I've been finding myself in some conversations with a few friends, one
-French, another American, and I end up talking about the nature of power,
-political persuasion, race, and progress in a much more fundamental way. I
-figure it's time to start formalizing these thoughts into something like a
-system.
-
-I am not a researcher, just a reader and thinker. So a ton of my ideas are
-gleaned from reading things, incorporating the ideas, and then forgetting the
-origin. A lot of these ideas are not original, and I wish I could easily link to
-the places where I first heard them. Please don't think I'm taking credit for
-ideas that have origins elsewhere. I just believe them, and want to write them
-down.
+I've been finding myself in some conversations with a few friends, one French,
+another American, and I end up talking about the nature of power, political
+persuasion, race, and progress in a much more fundamental way. I figure it's
+time to start formalizing these thoughts into something like a system. Or at
+least get them down in text.
 
 # Openness and Closedness are the Fundamental Political Axis
 
@@ -39,24 +32,26 @@ thing I repeatedly hammer on in that essay is the nature of openness and it's
 relation to liberalness and conservativeness.
 
 There's been a lot of hay made by the Economist set lately about the
-[open-closed political spectrum][2]. The idea, recently, has been that this is
-the new political dynamic. I find this really intriguing. Not the concept of
-open-closed, but the idea that this is _new_. I think the reality is that
-politics have _always_ been about open-closed. It's just that our politics have
-rarely been so starkly about conservative-liberal differences. Because our
-political parties are not _instinctually_ political like we are.
+[open-closed political spectrum][2]. The idea is that this is the new political
+dynamic. I find this intriguing. Not the concept of open-closed, but the idea
+that this is new. I think the reality is that politics have _always_ been about
+open-closed. It's just that our politics have rarely been so starkly about
+conservative-liberal differences. Because our political parties are not
+_instinctually_ political like we are. I'll talk more about this in the section
+titled "Race and The Wheel of Political Markets".
 
 Breaking down political persuasion can be complex. We have the traditional
 left-right division, the two dimensional political compass (where the vertical
-axis is social and the horizontal axis is fiscal), and now a plethora of axes
-systems. I love taking them, and usually bookmark my results. Some sites I've
-saved the results from have since gone dark, but here are some of my results
-from different tests:
+axis is social and the horizontal axis is fiscal), and now a plethora of
+different axes systems. I love taking them, and usually bookmark my results.
+Some sites I've saved the results from have since gone dark, but here are some
+of my results from different tests:
 
 - [8values][3]
 - [9axes][4]
-- [The Take Machine][5]
 - [Political Compass][6]
+- [RightValues][21]
+- [LeftValues][22]
 
 Political persuasion is a mess of interests, identity, and social connections.
 The political institutions in your country can also seriously influence the way
@@ -72,13 +67,14 @@ But this is too nitty gritty. A detailed analysis of political persuasion,
 evolution, and identity on an individual level would find some really
 interesting psychological dynamics involving group identity, personal interests,
 knee jerk responses, and people with vaguely or ill-defined political attitudes
-that become starkly polarized under different circumstances.
+that become starkly polarized under different circumstances (see "The Gray
+Matter of Political Identity").
 
 Conservatism and Liberalism have pretty obvious roots: to conserve something is
 to keep it the same, prevent it from running out, to be more reserved.
 Liberalism is to change things, accept new ways of doing things, and be more
 open. These aren't controversial definitions. Edmund Burke laid out Conservatism
-during the French Revolution pretty clearly: it's an instinct that tradition and
+during the French Revolution pretty clearly: it's to believe that tradition and
 historical institutions are meaningful and worth keeping. And John Stuart Mill
 laid out Liberalism pretty clearly in On Liberty: it's to be accepting of
 virtually anything that doesn't hurt anyone else.
@@ -98,10 +94,11 @@ to a mentality of experimentation and progress. Learning through practice. And
 this is the reason Liberalism tends toward big government economic solutions in
 the 20th and 21st century and in no way resembles Classical Liberalism: Liberals
 saw what unchecked capitalism can do. They saw the sweat shops and child labor
-and [Triangle Shirtwaist Factory][19] and _learned from it_. But that's what
-Liberalism is about, openness to experience _and learning from it_, not abstract
-concepts of "liberty" and "rule of law." These concepts _are_ liberal, but they
-are not _Liberalism_. They are ideas spawned _from_ the liberal instinct.
+and [Triangle Shirtwaist Factory Fire][19] and _learned from it_. But that's
+what Liberalism is about, openness to experience _and learning from it_, not
+abstract concepts of "liberty" and "rule of law." These concepts _are_ liberal,
+but they are not _Liberalism_. They are ideas spawned _from_ the liberal
+instinct.
 
 Contrariwise, Conservatism is the instinct to fear change. It is to recognize
 that systems are fragile, that people are dangerous, and that society can, and
@@ -139,11 +136,11 @@ multiple competing factions and the government is incapable of maintaining
 control as the sole source of legitimate force. The book The Narrow Corridor and
 its "Shackled Leviathan" is a really enlightening window into this concept.
 
-But there is one, and only one, truth about reality which politics has to
-contend with: Change.
+But there is one, and only one, reality which politics has to contend with:
+Change.
 
-I feel like there's no reason to argue this, that there's no one that disagrees,
-but it would behoove me to at least provide a little evidence for this.
+I feel like there's no reason to argue this, that no one can disagree, but it
+would behoove me to at least provide a little evidence for this.
 
 You grow old. New people are born. They will say new words, come up with new
 concepts, dress differently, live differently, and invent new things. They will
@@ -167,9 +164,10 @@ _**You can go too fast.**_
 There's this [famous fact about collisions and billiards balls][9] that after
 the sixth collision of a ball, in order to calculate the trajectory and speed,
 you would have to take into account the gravitational pull of all the
-individuals in the room, and that after the 56th, you'd have to take into
-account every molecule in the known universe. It's often mentioned when talking
-about how hard it is to make predictions, even in deterministic, simple systems.
+individuals in the room, and that after something like the 56th, you'd have to
+take into account every molecule in the known universe. It's often mentioned
+when talking about how hard it is to make predictions, even in deterministic,
+simple systems.
 
 This is true in nearly every domain. For instance, we talk about how you can
 kill one species and the result is a cascading domino effect of other species
@@ -255,7 +253,7 @@ decadent society.
 
 I like this evolutionary metaphor for political persuasion. I like it a lot.
 They don't call it the Body Politic for nothing. One thing worth considering is
-disease. When either of these forces becomes too strong. Namely, autoimmune
+disease: when either of these forces becomes too strong. Namely, autoimmune
 disorders and cancer.
 
 I love to draw a spectrum like this:
@@ -286,13 +284,13 @@ really does. [Wikipedia][18]:
 > coinage to comprehend the entire political spectrum, though retaining the
 > connotation of "change at the root".
 
-"But Michael, you said a word is only what it means to the people who use it!"
-Shut the fuck up, most people use the word "Conservative" to mean Republican and
+"But Michael, you a word is only what it means to the people who use it!" Shut
+the fuck up, most people use the word "Conservative" to mean Republican and
 "Liberal" to mean Democrat and they have no idea what they are talking about. A
 lot of words only mean what people use them to mean (e.g., decimate, literally,
-silly), but these words have real meanings that continue in serious places but
+silly), but other words have real meanings that continue in serious places but
 of which the larger populace is ignorant. That doesn't mean the word doesn't
-mean what academics think it means.
+mean what academics use it to mean.
 
 Regardless, just as mutation can result in cancer, and the protective instincts
 of the immune system can start attacking itself, liberals can degrade a society
@@ -317,7 +315,17 @@ seems anachronistic:
 > right, it is their duty, to throw off such Government, and to provide new
 > Guards for their future security.
 
-# Political and Financial Power and the Sine Wave of Power
+I have a hard time understanding the mechanism of Horseshoe Theory, but I have
+little doubt that it is real. By [Horseshoe Theory][5] I am of course referring
+to the theory that the left-right political spectrum is more like a horseshoe
+than a line, that people on the extreme left and extreme right almost touch.
+
+I think that we can safely just gloss over this fact by pointing out that both
+radicals and reactionaries are dissatisfied with the present, and so want to
+destroy the current order, not just change or tweak it. At least, that's what
+_I'm_ sticking to for now.
+
+# Political and Financial Power
 
 Okay, now that we've established how I see political persuasion, change, and
 evolution in the body politic, I'd like to get into how I see the larger
@@ -336,11 +344,6 @@ motivations. Freud believed sex was the basis. Marx believed capital (money).
 Foucault, power. I'm inclined to believe them all, because they're all just
 about survival. With sex, you reproduce and survive. With money, you have power.
 And with power, you can ensure your survival.
-
-I started writing this essay today because of a conversation with my friend
-Alex, a frenchman involved in the wine trade and living in Chile. We were
-talking about China and how it's not likely to grow as fast in the future
-because it's an autocratic nation.
 
 It's become a bit of a refrain that the West used to believe that with economic
 freedom political freedom would follow and that the West was wrong, and China is
@@ -362,19 +365,22 @@ democracies are almost always free market nations, and why go to war when you
 can make money?
 
 Countries like China, where power is absolutely concentrated in a nondemocratic
-oligarchy (no matter how large it is, concentration is relative; I don't care
-that the National People's Congress has nearly 3000 members, the country has 1.3
-_billion_ damn people; futhermore, that Congress is not as "free" to vote it's
-conscience as the legislatures of the West) can have economic prosperity in the
-short term (which is, _necessarily_, a function of economic freedom), but can
-never escape the runway of its own potential corruption.
+oligarchy, can have economic prosperity in the short term, but can never escape
+the runway of its own potential corruption. No matter how large the country is,
+concentration is relative; I don't care that the National People's Congress has
+nearly 3000 members, the country has 1.3 _billion_ damn people. Futhermore, that
+Congress is not as "free" to vote its conscience as the legislatures of the
+West.
 
-If you doubt the necessity of economic freedom for a nation's prosperity you can
-stop reading now. There exists no controlled economy in history of the world
+The reason for this is fairly simple: prosperity is inextricably linked with
+economic freedom, and when a power capable of restricting that freedom is
+concentrated, it will be abused to restrict that freedom for its own benefit. If
+you doubt the necessity of economic freedom for a nation's prosperity you can
+stop reading now. There exists no controlled economy in the history of the world
 which has ever prospered in the long term (i.e., on the order of even a hundred
 years).
 
-_On the other hand_ we can see a plethora of examples where too weak a
+_On the other side_ we can see a plethora of examples where too weak a
 governmental institution results in poverty. The United States from 1880-1940 is
 a great example of this: poverty was rampant, inequality was extreme, and abject
 misery was the law of the land during a period of extreme economic freedom.
@@ -403,15 +409,116 @@ market, neurosis.
 
 # Concentration of Power and the Origin of Political Institutions
 
-Gene Sharp
+I have always been fascinated by popular movements, like the protest movements
+in the sixties and the color revolutions in the 80s. It wasn't until I found
+Gene Sharp's book [Waging Nonviolent Struggle][22] that I learned there were
+comprehensive studies of popular movements as a phenomenon. I devoured that
+book, and then bought and read all three volumes of his [The Politics of
+Nonviolent Action][23].
+
+Gene Sharp's work is especially fascinating because he lays out a pretty
+comprehensive theory of power and politics. It has profoundly shaped the way I
+see the world. In fact, his theory is not too different from that of Varys in
+Game of Thrones:
+
+> “Oh, I think not,” Varys said, swirling the wine in his cup. “Power is a
+> curious thing, my lord. Perchance you have considered the riddle I posed you
+> that day in the inn?”
+>
+> “It has crossed my mind a time or two,” Tyrion admitted. “The king, the
+> priest, the rich man—who lives and who dies? Who will the swordsman obey? It’s
+> a riddle without an answer, or rather, too many answers. All depends on the
+> man with the sword.”
+>
+> “And yet he is no one,” Varys said. “He has neither crown nor gold nor favor
+> of the gods, only a piece of pointed steel.”
+>
+> “That piece of steel is the power of life and death.”
+>
+> “Just so… yet if it is the swordsmen who rule us in truth, why do we pretend
+> our kings hold the power? Why should a strong man with a sword ever obey a
+> child king like Joffrey, or a wine-sodden oaf like his father?”
+>
+> “Because these child kings and drunken oafs can call other strong men, with
+> other swords.”
+>
+> “Then these other swordsmen have the true power. Or do they?” Varys smiled.
+> “Some say knowledge is power. Some tell us that all power comes from the gods.
+> Others say it derives from law. Yet that day on the steps of Baelor’s Sept,
+> our godly High Septon and the lawful Queen Regent and your
+> ever-so-knowledgeable servant were as powerless as any cobbler or cooper in
+> the crowd. Who truly killed Eddard Stark, do you think? Joffrey, who gave the
+> command? Ser Ilyn Payne, who swung the sword? Or… another?”
+>
+> Tyrion cocked his head sideways. “Did you mean to answer your damned riddle,
+> or only to make my head ache worse?”
+>
+> Varys smiled. “Here, then. Power resides where men believe it resides. No more
+> and no less.”
+
+This is a fairly hand-wavy description, and Gene Sharp's theory is far less
+nihilistic than Varys's, but the ultimate realization is that power is a
+collective psychological trick, a kind of mass interlocking fiction. But that
+_doesn't make it fake_.
+
+One of the most fascinating results of Gene Sharp's analysis is to recognize
+that the resulting government structure after it's formation derives, almost
+linearly, from the source of its creation. Governments formed by small groups of
+elites tend to be less democratic, and governments formed by masses of peoples
+tend to be _more_ democratic. This makes sense, intuitively, because if a small
+group of people form a government, they necessarily want to hold onto the power
+they already have, and don't trust those outside their group. There are
+exceptions, glaring exceptions, like the United States, I'd say, but in general,
+these principles hold.
+
+The result in Sharp's analysis is that political change brought about by
+nonviolent action tends to result in more democratic institutions than that
+brought by violence. This is because violence is a limiting force. Neither the
+old, nor the sick, nor the very young can wield it. Therefore, those bringing
+about the political change through violence, are a subset of the population who
+will wish to keep the power they've gained.
+
+By contrast, in popular nonviolent movements, anyone can take part. Literally,
+anyone, and the old, and young, and sick are sometimes the most powerful
+fighters. Because one major weapon of nonviolent action is motivating the
+sympathy of the opponent through pathos. There are other factors, and I strongly
+encourage anyone to read through Gene Sharp's works to learn about them, because
+he convinced me, quite _rationally_, that nonviolence is always the answer, and
+violence never is.
 
 # Concentration of Power and the Curse of Natural Resources
 
+This theory is not _just_ Gene Sharp's. I derive a large part of my
+understanding of the diffusion and concentration of power and its effects from
+the book [Why Nations Fail][25], which bases its analysis on a simple rule:
+nations with extractive institutions suffer poverty because of the inherently
+corrupting nature of power, and nations with inclusive institutions necessarily
+prosper because of the freedom of opportunity offered to their citizens.
+
+One other result of this analysis, that prosperity is intimately linked with the
+diffusion of power, is that the [Resource Curse][24] instantly becomes
+explicable.
+
+The Resource Curse is "the phenomenon of countries with an abundance of natural
+resources (such as fossil fuels and certain minerals) having less economic
+growth, less democracy, or worse development outcomes than countries with fewer
+natural resources" (Wikipedia).
+
+The explanation for this is that a nation with natural resources has an easily
+monopolizable source of power: the resource itself. Natural Resources are
+physical things. They can be walled off, extracted in mass, and monopolized.
+This presents a ready-made roadway to concentrating power. By contrast, a nation
+poor in resources does not have that easy route for concentrated power, and is
+more inclined to sharing it.
+
 # Race and The Wheel of Political Markets
+
+@TODO How does this fit with political markets and governmental structures. The
+political markets package positions, not instincts.
 
 History of US Party Systems
 
-# The Gray Matter of Political Persuasion
+# The Gray Matter of Political Identity
 
 Gene Sharp and polarization
 
@@ -427,6 +534,8 @@ Gene Sharp and polarization
 - [Power and Politics in Today's World by Ian Schapiro](https://youtube.com/playlist?list=PLh9mgdi4rNeyViG2ar68jkgEi4y6doNZy)
 - [Why Nations Fail by Daron Acemoglu and James A. Robinson](https://en.wikipedia.org/wiki/Why_Nations_Fail)
 - [The Narrow Corridor by Daron Acemoglu and James A. Robinson](https://www.amazon.com/Narrow-Corridor-States-Societies-Liberty-ebook/dp/B07MCRLV2K)
+- [The Alt-Right Playbook by Innuendo Studios, aka Ian Danskin]
+- [The Division of Cognitive Labor by Philip Kitcher](https://www.jstor.org/stable/2026796)
 
 <!--But I guess I don't care that much about the politics of individuals. I'm
 thinking on a more holistic level: the political persuasion of the polity
@@ -443,12 +552,11 @@ this.-->
 [3]: https://8values.github.io/results.html?e=70.5&d=70.6&g=71.8&s=76.9
 [4]:
   https://9axes.github.io/results.html?a=38&b=59&c=85&d=42&e=27&f=79&g=72&h=59&i=12
-[5]: http://www.thetakemachine.co.uk/quiz/yV0JsP/results
+[5]: https://en.wikipedia.org/wiki/Horseshoe_theory
 [6]: https://www.politicalcompass.org/analysis2?ec=-7.0&soc=-6.1
 [7]: https://en.wikipedia.org/wiki/A_Thousand_Small_Sanities
 [8]: https://www.newyorker.com/magazine/2015/05/04/trollope-trending
-[9]:
-  https://story.fund/post/612100506647740416/nine-collisions-limit-billiard-players-usually
+[9]: https://michaelberryphysics.files.wordpress.com/2013/07/berry076.pdf
 [10]: https://en.wikipedia.org/wiki/The_Holocaust
 [11]: https://en.wikipedia.org/wiki/Holodomor
 [12]: https://en.wikipedia.org/wiki/Great_Chinese_Famine
@@ -460,3 +568,12 @@ this.-->
 [18]: https://en.wikipedia.org/wiki/Radical_politics
 [19]: https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire
 [20]: https://en.wikipedia.org/wiki/Democratic_peace_theory
+[21]:
+  https://rightvaluestest.github.io/quizresults.html?a=82.1&b=78.1&c=29.2&d=40.9&e=37.5&f=72.2&g=28.6
+[22]:
+  https://leftvalues.github.io/results.html?a=1.5&b=57.8&c=16.7&d=75.0&e=50.0&f=26.4&g=29.4
+[22]:
+  https://www.nonviolent-conflict.org/resource/waging-nonviolent-struggle-20th-century-practice-and-21st-century-potential-3/
+[23]: https://en.wikipedia.org/wiki/The_Politics_of_Nonviolent_Action
+[24]: https://en.wikipedia.org/wiki/Resource_curse
+[25]: https://en.wikipedia.org/wiki/Why_Nations_Fail
