@@ -513,6 +513,9 @@ more inclined to sharing it.
 
 # Race and The Wheel of Political Markets
 
+So this essay started in my mind today because I basically gave an overview of
+the evolution of the American Party System from 1860 to the present day.
+
 @TODO How does this fit with political markets and governmental structures. The
 political markets package positions, not instincts.
 
