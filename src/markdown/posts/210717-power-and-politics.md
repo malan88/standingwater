@@ -667,17 +667,38 @@ market. LBJ was a notorious racist, but he must have seen political winds
 changing and pursued the Civil Rights Act and the Voting Rights Act vehemently
 to passage. And with that the Democrats became the party of civil rights.
 
-Now, we have a new battle line drawing. It is the same one as in 1860, only
-inverted. There is a new unclaimed political market: racists.
+So in the 1960s we have a new battle line drawing. It is the same one as in
+1860, only inverted. There is a new unclaimed political market: racists.
+Southern white segregationists. The Republican party never represented them, and
+the Democratic party, having pushed the Civil Rights Act and Voting Rights Act,
+is clearly abandoning this demographic in favor of a racially diverse labor
+demographic.
 
-@TODO How does this fit with political markets and governmental structures. The
-political markets package positions, not instincts.
+So in 1968 we have riots, protests, and racial politics. What do the Republicans
+do? [Pick up that racist vote][35]. Thus began the Sixth Party System.
 
-History of US Party Systems
+# Race as the Central Instinctual Political Axis
 
-# The Gray Matter of Political Identity
+If we accept openness and closedness as the central political axis, what is the
+most essential political issue along this divide? It isn't economic freedom,
+because we can see conservatives supporting economic freedom in the US, and
+liberals supporting it in China. It isn't environmental issues, as the basis of
+environmentalism is, _itself_ [conservation][36]. It isn't democracy, either,
+because there have been plenty of [conservatives who have been strong champions
+of democracy][37].
 
-Gene Sharp and polarization
+No, the central central political issue in instinctual politics, universal
+across cultures, is _race_.
+
+Racists are _always_ conservative. They do not want to accept another group of
+people as themselves. Because strangeness, otherness, is uncertain. Is change.
+
+This is what I meant by saying our political our political parties are not
+_instinctually_ political like we are. Our parties are actually _rarely_ divided
+upon the race axis. And when they are, we have mass irruptions of political
+turmoil.
+
+<!--# The Gray Matter of Political Identity-->
 
 # Risk, Uncertainty, and Aversion to Change
 
@@ -840,3 +861,6 @@ this.-->
 [33]:
   https://nowthisnews.com/videos/politics/ronald-reagans-final-presidential-speech-was-for-immigrants
 [34]: https://en.wikipedia.org/wiki/Milgram_experiment
+[35]: https://en.wikipedia.org/wiki/Southern_strategy
+[36]: https://en.wikipedia.org/wiki/Green_conservatism
+[37]: https://en.wikipedia.org/wiki/Neoconservatism
