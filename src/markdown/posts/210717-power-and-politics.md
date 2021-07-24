@@ -55,13 +55,14 @@ of my results from different tests:
 
 Political persuasion is a mess of interests, identity, and social connections.
 The political institutions in your country can also seriously influence the way
-citizens recognize their political identity. In multi party systems people often
+citizens recognize their political identity. In multi-party systems people often
 gravitate into smaller camps (environmentalists, labor, commerce, etc) whereas
 in big tent party countries like the United States and the UK political
-persuasion is typically more holistic. The way you end up building your
-positions can follow a simple route: you're concerned with an issue that one
-party agrees with, you follow that party, you therefore adopt their other
-positions with which you are less concerned.
+persuasion is typically more holistic. In fact, there's some mathematics that
+Political Scientists have developed that determine how many parties a given
+democratic system can support. Which is why people that wish America was
+multi-party make me roll my eyes. There are, in fact, [some _benefits_ to big
+tent two party systems][26].
 
 But this is too nitty gritty. A detailed analysis of political persuasion,
 evolution, and identity on an individual level would find some really
@@ -172,7 +173,6 @@ simple systems.
 This is true in nearly every domain. For instance, we talk about how you can
 kill one species and the result is a cascading domino effect of other species
 dying out. Well, society is a very, _very_ nondeterministic and complex system.
-Complex systems have interactions that are literally impossible to tease out.
 Making a change to society, no matter how well-intentioned, can easily have
 unintended consequences. Can easily have _bad_ consequences. Societally
 destructive consequences.
@@ -198,7 +198,87 @@ understand, and the result is [a][10] [mass][11] [outbreak][12] [of][13]
 [death][14] [and][15] [violence][16]. You think you'd never do that? You think
 your society is stronger than that?
 
-**_[You're wrong.][17]_**
+**_[You're][17] [wrong.][34]_**
+
+# El sueño de la razón produce monstruos
+
+> Reason is, and ought only to be the slave of the passions, and can never
+> pretend to any other office than to serve and obey them.
+>
+> - David Hume, A Treatise of Human Nature
+
+Goya's painting, [The Sleep of Reason Produces Monsters][27], is a kind of
+leitmotif on this for me. There's a handful of names that come to mind that
+inform my thinking about this link between Conservatism, Original Sin, Change,
+and the Sublime: Edmund Burke, Francisco Goya, Sigmund Freud, Friedrich
+Nietzsche, Carl Jung, and David Hume.
+
+I'm just going to talk about Hume and the Belgians.
+
+When I was starting on my road in philosophy at USF, I had to write a paper for
+Phi 101 about some philosophical subject. I chose free will because I thought I
+could prove it exists through some convoluted logic regarding Uncertainty in
+quantum mechanics. It was a very freshman thing to think. I ended up
+_disproving_ free will by some old fashioned logic we find in Hume.
+
+Basically it goes like this: what is free will? Let's assume we have it. When I
+take some action, I have an internal volition to perform this action, and I use
+reason to determine the correct course of action. This volition must be free
+will.
+
+Okay, so what is this volition? It's a passion. A feeling. But where does it
+come from? Either I am in control of it, and therefore it is my will, or I am
+not and it comes to me from some internal process that is out of my control.
+
+Supposing it is in my control, how does my will to control it generate? Where do
+the volitions to control my volitions come from? Supposing they come from my
+reasoning about what is best for me, where does my desire to control this
+volition toward what is best for me come from?
+
+You see, we have a bit of an infinite regress. What's called a [Homunculus
+Argument][28]. This is because free will is an ill-defined concept that
+evaporates upon examination. At base, we are, even in our own actions, outside
+our own control at some basic level.
+
+I eventually learned that this is basically what Hume was arguing in his defense
+of soft determinacy (as opposed to hard determinacy, that the universe is
+basically just a set of complicated equations which can (ostensibly) be
+calculated n-moves out to predict the future). But the idea is deeper than that,
+for its implications in human society. And for this, we can turn to the
+Belgians.
+
+These deep subliminal volitions over which we have no power, if we don't pay
+attention to them, can _irrupt_. This is the basis of Psychoanalysis and the
+work of Sigmund Freud.
+
+There's this terrifying phenomenon in Belgium, where euthanasia is legal even
+for mental disorders. In Belgium, you can choose to self-euthanize for
+depression. Logically, this makes sense: depression can be a life-long
+affliction and a humane society would allow you to end your life rather than
+suffer from it for the rest of its span.
+
+But is it humane? It's, to quote an excellent article on the subject:
+
+> utopia realized: everything is neat and clean and terrible.
+>
+> - Herman De Dijn quoted in [The Death Treatment][29] by Rachel Aviv, New
+>   Yorker, 2015
+
+It is when we become too detached from our subconscious passions and volitions
+that things begin to seriously derail. Examine Hannah Arendt's observation of
+the banality of evil: the holocaust was perpetrated as an almost bureaucratic
+exercise entirely devoid of feeling. The feeling that motivated this
+bureaucratic machine was unexamined: reason assumed passion was irrelevant.
+
+I am in no way suggesting that _reason_ is to blame for this, it is precisely
+_reason_ which can prevent atrocities. But it is reason's _ignorance_ of passion
+that allows them to be perpetrated.
+
+I am not a hippy. I am not back-to-nature. I am not one of civilization's
+discontents. In fact, I despise anti-modernists that assume the past is better
+than the present. It is, _demonstrably_, true that the present is better than
+the past. But I do recognize that these three phenomena, and most evil today,
+are irruptions of reason's dismissal of passion.
 
 # Political Persuasion as the Genetics of Social Evolution
 
@@ -249,6 +329,10 @@ past, there can be no evolution, no progress. Likewise, without Liberalism,
 without mutation, there can be no evolution, no progress. Only a static, dying,
 decadent society.
 
+Meanwhile, the neurotics, radicals and reactionaries, want to either destroy the
+Body Politic to build some new frankenstein society, or retrograde into their
+Peter Pan Syndrome fantasy of society's childhood.
+
 # Extremes and Neurosis
 
 I like this evolutionary metaphor for political persuasion. I like it a lot.
@@ -265,6 +349,10 @@ I love to draw a spectrum like this:
 The point on which my theory gets shakiest is here. On the extremes. Sometimes I
 think Radicals are fundamentally different from Reactionaries, sometimes I think
 the Horseshoe Theory is fundamentally right. Honestly, I think it is right.
+
+I always want to call Leftists Gauchists, which is just French for Leftist.
+Leftist implies a symmetry with Rightist, but that's not a good word, so I'm
+just going to keep calling them Radicals.
 
 You can get so liberal that you don't learn from experience and try new things
 to advance but actively seek some ideal future that you have in your head. We
@@ -284,8 +372,8 @@ really does. [Wikipedia][18]:
 > coinage to comprehend the entire political spectrum, though retaining the
 > connotation of "change at the root".
 
-"But Michael, you a word is only what it means to the people who use it!" Shut
-the fuck up, most people use the word "Conservative" to mean Republican and
+"But Michael, a word is only what it means to the people who use it!" Shut the
+fuck up, most people use the word "Conservative" to mean Republican and
 "Liberal" to mean Democrat and they have no idea what they are talking about. A
 lot of words only mean what people use them to mean (e.g., decimate, literally,
 silly), but other words have real meanings that continue in serious places but
@@ -323,7 +411,7 @@ than a line, that people on the extreme left and extreme right almost touch.
 I think that we can safely just gloss over this fact by pointing out that both
 radicals and reactionaries are dissatisfied with the present, and so want to
 destroy the current order, not just change or tweak it. At least, that's what
-_I'm_ sticking to for now.
+I'm sticking to for now.
 
 # Political and Financial Power
 
@@ -513,8 +601,74 @@ more inclined to sharing it.
 
 # Race and The Wheel of Political Markets
 
-So this essay started in my mind today because I basically gave an overview of
-the evolution of the American Party System from 1860 to the present day.
+So this essay started in my mind because I basically gave a friend from France
+an overview of the evolution of the American Party System from 1860 to the
+present day. I believe here I am walking out onto thin ice, but I am not going
+to let that deter me from laying out my understanding of the world.
+
+How correct that overview was is largely irrelevant. The shape is correct, and
+gleaned from history books I've read. I'm going to give it now.
+
+I think the American party system is a lot like a giant wheel of shifting
+political constituencies and party elites trying their damndest to win elections
+by picking off the edges of their opponent. Here's how I see the history of the
+United States since 1860:
+
+In the Civil War the parties were pretty well-delineated. The South was held by
+the Democrats, a white-identity based party of rural poor and landed
+aristocrats. They were very closed. The North was held by the Republicans, a
+loose collection of abolitionists and liberals. They were very "Whiggish" in the
+sense of liberal technocrats. Woke Capitalists, if you will. They were very
+open.
+
+We can say, at this point, that the central axis of our political wheel was
+race-based.
+
+During the war, the commercial interests in the North became very rich, and very
+Republican. After the war, these commercial interests, being the alimentary
+canal of society, couldn't give less of a shit about the interests of poor
+blacks in the poor south. Reconstruction lasted a little under 12 years, while
+the liberals in the Republican party held onto their power, but gradually, the
+commercial, business coalition of the Republican party successfully wrested
+power from them and the Republicans ceased to care about racial equality. It was
+better for business.
+
+History is never linear, so we saw some anti-business action from the Republican
+party over the ensuing decades, like Teddy Roosevelt's progressive trust
+busting, but in general, the Republican party took its business coalition very
+seriously.
+
+Race, for a time, ceased to be a primary motivating factor in the politics of
+the US. An apartheid was allowed to be reinstated in the Jim Crow South.
+
+Come the 1930's, the US enters the Great Depression. Extreme poverty lays across
+the land like a shroud. The Democratic Party, having always been more interested
+in labor due to its base in the poor, rural, south, picks up the issue of class
+and labor as its primary platform. We have FDR, a New Yorker democrat, has
+nearly 4 consecutive clean sweeps of the South.
+
+Now, FDR was no racial egalitarian. There were quite a lot of racially
+exclusionary policies during the New Deal. So, the central axis of our politics
+at this point was class-based.
+
+In the 1950's, we can say, definitively, that the Republican party still had
+civil rights members: Dwight Eisenhower, a Republican, sent the 101st Airborne
+into Little Rock to force desegregation brought by a Supreme Court Decision lead
+by his own Republican nominee: Earl Warren. In fact, Earl Warren is known almost
+universally as a distinctly liberal Justice. We can say, therefore, that the
+Republican party had liberal members even into the 1950s. I don't know that we
+can call Eisenhower a strict egalitarian, there's some evidence I've seen that
+he regretted having to do it, but can we just take a moment and think about how
+awesome it is that the same company that dropped behind enemy lines the night
+before D-Day went into Arkansas to force desegregation?
+
+In the 1960s, LBJ started to change the status quo by seeking a new political
+market. LBJ was a notorious racist, but he must have seen political winds
+changing and pursued the Civil Rights Act and the Voting Rights Act vehemently
+to passage. And with that the Democrats became the party of civil rights.
+
+Now, we have a new battle line drawing. It is the same one as in 1860, only
+inverted. There is a new unclaimed political market: racists.
 
 @TODO How does this fit with political markets and governmental structures. The
 political markets package positions, not instincts.
@@ -525,9 +679,99 @@ History of US Party Systems
 
 Gene Sharp and polarization
 
-## Materials That Lead These Beliefs
+# Risk, Uncertainty, and Aversion to Change
 
-- Encyclopedia Britannica (15th Edition): articles on Conservatism and
+I think that's more to the world than I've already discussed and I want to lay a
+little groundwork for how I expect I'll think in the future.
+
+I have heretofore described the centrality of change to politics, but really
+it's more than that: it's uncertainty. Fear of change is fear of uncertainty.
+Fear of others is fear of uncertainty. Fear, itself, is uncertainty.
+
+Let's examine this.
+
+There's this one-off fact I read in a Time Magazine cover article titled ["The
+Pursuit of Happiness"][30] once that has shaped a lot of my thinking about all
+of this:
+
+> ...that idea got a big boost when investigators at Harvard and Boston
+> University analyzed a gene dubbed DRD4, which is associated with activity in
+> the brain's dopamine receptors. The gene comes in several forms, or alleles.
+> Of the three most common, one codes for even-temperedness and reflection,
+> while the other two code for exploratory and impulsive behavior, as well as a
+> taste for risk taking and a tolerance of novelty.
+>
+> When the investigators looked at the frequency of the different alleles in
+> people around the world, they found that the farther along the migration route
+> from Africa, the cradle of us all, through central Asia, Europe and the New
+> World, the likelier people were to carry the two novelty-seeking alleles.
+> Studies of another gene called 5-HTTLPR, related to serotonin transport, have
+> yielded similar findings. The allele of that gene that codes for anxiety and
+> risk avoidance is less common in individualistic cultures like that of the
+> U.S.
+
+If we think about this: not only is risk-taking selected for in the America by
+it's being at nearly the end of prehistoric migration routes (across the Bering
+Strait), but during the mass waves of immigration in the 19th century you _had_
+to be novelty-seeking to risk a months-long journey to a land you'd never seen
+to start a new life. And if we examine this gene, this novelty-seeking gene, [we
+can easily match it up with the liberal instinct][31].
+
+There's this idea that the United States is conservative. This is bullshit. I'm
+going to quote my Negroni article:
+
+> America is literally the most liberal country in the world. Here in America we
+> often think of Europe as far more sophisticated and liberal than the US. But
+> it's really not, in a lot of ways. The US may not have the most generous
+> welfare system, but hell, we're the only country in the world to give out one
+> time stimulus payments during the pandemic. We're the most diverse country in
+> the world, and when people think we're the most racist, they aren't accounting
+> for the fact that that diversity allows racism to show it's face, where other
+> countries don't have the opportunity to show racism like we do (ever heard of
+> Black Pete?). First hand accounts of France I've read describe their racial
+> attitudes as being close to America in the 80's. Concepts like
+> Intersectionalism are foreign to their general populace, and the idea of Color
+> Blindness is still pretty standard. Hell, even the liberals in England (J.K.
+> Rowling...) are incredibly transphobic. The French are very Islamophobic, far
+> more Islamophobic than the average American. The Germans, fuck, holy shit are
+> they a mess. They don't even believe in debt! They call it "schuld", a synonym
+> for "shame." (If you don't understand the relevance of this, consider that the
+> concepts of financing and debt are the most liberal of inventions in history:
+> the idea that you can owe people money and it's a good thing, that the owing
+> someone money now will pay off in the future. It demands a belief in
+> progress.) Ronald Reagan, one of our _conservatives_ [bragged in his final
+> address][33] about the fact that you can't become a Japanese, you can't become
+> a Frenchman, you can't become a German, but anyone can become an American.
+> This is a profoundly liberal idea. (Watch that speech, please, it's stunning,
+> from a man I do not love.)
+
+Indeed, America is _so_ liberal that our conservatives champion liberal
+principles: free markets and individual liberty. In America we confused what the
+world typically means by liberal and conservative. Liberal means free and
+conservative means the status quo. In America, the status quo _is_ freedom.
+
+But examining this, it seems this American penchant for risk taking shows how
+liberal America is. How inextricably linked liberalness and comfort with
+uncertainty are.
+
+I like to think the only great sin is a lack of curiosity. Of overconfidence.
+Hubris.
+
+Reactionaries fear uncertainty to such an extent that they assume supreme
+confidence in the most basic of things that they know. They reject nuance, and
+assume everything to be simple. They tend toward conspiracy theories because
+they understand evil humans better than complex indeterminate systems. They
+don't like nuance, they don't like impersonal forces.
+
+Radicals are so overconfident in their reason that they assume, through reason
+alone, they can find a societal structure which will be better than what has
+evolved through nature.
+
+Conservatives fear, and Liberals hope, and they're both right, to fear and hope.
+
+## Materials in some way or another influenced the beliefs written in this article
+
+- Encyclopedia Britannica (15th Edition)'s articles on Conservatism and
   Liberalism
 - [My Life as a Muslim in the West's Gray Zone](https://www.nytimes.com/2015/11/29/magazine/my-life-as-a-muslim-in-the-wests-gray-zone.html)
 - [The Politics of Nonviolent Action by Gene Sharp](https://en.wikipedia.org/wiki/The_Politics_of_Nonviolent_Action)
@@ -537,8 +781,13 @@ Gene Sharp and polarization
 - [Power and Politics in Today's World by Ian Schapiro](https://youtube.com/playlist?list=PLh9mgdi4rNeyViG2ar68jkgEi4y6doNZy)
 - [Why Nations Fail by Daron Acemoglu and James A. Robinson](https://en.wikipedia.org/wiki/Why_Nations_Fail)
 - [The Narrow Corridor by Daron Acemoglu and James A. Robinson](https://www.amazon.com/Narrow-Corridor-States-Societies-Liberty-ebook/dp/B07MCRLV2K)
-- [The Alt-Right Playbook by Innuendo Studios, aka Ian Danskin]
+- [The Alt-Right Playbook by Innuendo Studios, aka Ian Danskin](https://www.youtube.com/playlist?list=PLJA_jUddXvY7v0VkYRbANnTnzkA_HMFtQ)
 - [The Division of Cognitive Labor by Philip Kitcher](https://www.jstor.org/stable/2026796)
+- [The Interpretation of Dreams by Sigmnud Freud](https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams)
+  [Selected Papers on Hysteria by Sigmund Freud](https://en.wikisource.org/wiki/Selected_Papers_on_Hysteria_and_Other_Psychoneuroses)
+- Selected Works by Carl Jung
+- [The Warriors by J. Glenn Gray](https://www.amazon.com/Warriors-Reflections-Men-Battle/dp/0803270763)
+- [War Is a Force That Gives Us Meaning](https://en.wikipedia.org/wiki/War_Is_a_Force_That_Gives_Us_Meaning)
 
 <!--But I guess I don't care that much about the politics of individuals. I'm
 thinking on a more holistic level: the political persuasion of the polity
@@ -580,3 +829,14 @@ this.-->
 [23]: https://en.wikipedia.org/wiki/The_Politics_of_Nonviolent_Action
 [24]: https://en.wikipedia.org/wiki/Resource_curse
 [25]: https://en.wikipedia.org/wiki/Why_Nations_Fail
+[26]: https://youtu.be/TromTeBgwXY?t=1741
+[27]: https://en.wikipedia.org/wiki/The_Sleep_of_Reason_Produces_Monsters
+[28]: https://en.wikipedia.org/wiki/Homunculus_argument
+[29]: https://www.newyorker.com/magazine/2015/06/22/the-death-treatment
+[30]:
+  https://web.archive.org/web/20200220224509/http://content.time.com/time/magazine/article/0,9171,2146449-3,00.html
+[32]:
+  https://healthland.time.com/2010/10/28/never-mind-the-tea-party-can-a-liberal-gene-make-you-a-party-animal/
+[33]:
+  https://nowthisnews.com/videos/politics/ronald-reagans-final-presidential-speech-was-for-immigrants
+[34]: https://en.wikipedia.org/wiki/Milgram_experiment
