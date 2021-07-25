@@ -802,7 +802,7 @@ evolved through nature.
 
 Conservatives fear, and Liberals hope, and they're both right, to fear and hope.
 
-## Materials in some way or another influenced the beliefs written in this article
+### Materials that in some way or another influenced the beliefs written in this article
 
 - Encyclopedia Britannica (15th Edition)'s articles on Conservatism and
   Liberalism
@@ -820,7 +820,7 @@ Conservatives fear, and Liberals hope, and they're both right, to fear and hope.
   [Selected Papers on Hysteria by Sigmund Freud](https://en.wikisource.org/wiki/Selected_Papers_on_Hysteria_and_Other_Psychoneuroses)
 - Selected Works by Carl Jung
 - [The Warriors by J. Glenn Gray](https://www.amazon.com/Warriors-Reflections-Men-Battle/dp/0803270763)
-- [War Is a Force That Gives Us Meaning](https://en.wikipedia.org/wiki/War_Is_a_Force_That_Gives_Us_Meaning)
+- [War Is a Force That Gives Us Meaning by Chris Hedges](https://en.wikipedia.org/wiki/War_Is_a_Force_That_Gives_Us_Meaning)
 
 <!--But I guess I don't care that much about the politics of individuals. I'm
 thinking on a more holistic level: the political persuasion of the polity
