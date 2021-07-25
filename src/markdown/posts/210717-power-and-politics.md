@@ -1,6 +1,6 @@
 ---
 title: "Understanding Politics"
-date: "2021-07-17"
+date: "2021-07-24"
 ---
 
 I spend a lot of time thinking about politics from a holistic perspective,
@@ -10,15 +10,15 @@ code to simulate government structures and how they warp the political
 persuasion of the populace into a more liberal or conservative country than
 their people are by nature][0]. It doesn't work yet. It basically says the USA
 is 100% liberal because it passes every proposed law. Obviously I have a bug.
-But it's fun, and interesting.
+But it's fun and interesting work.
 
-I've been finding myself in some conversations with a few friends, one French,
-another American, and I end up talking about the nature of power, political
-persuasion, race, and progress in a much more fundamental way. I figure it's
-time to start formalizing these thoughts into something like a system. Or at
-least get them down in text.
+I've been finding myself lately in some conversations with a few friends, one
+French, another American, and I end up talking about the nature of power,
+political persuasion, race, and progress in a much more fundamental way. I
+figure it's time to start formalizing these thoughts into something like a
+system. Or at least get them down in text.
 
-# Openness and Closedness are the Fundamental Political Axis
+# <term>Openness</term> and <term>Closedness</term> are the Fundamental Political Axis
 
 > Society is indeed a contract. It is a partnership . . . not only between those
 > who are living, but between those who are living, those who are dead, and
@@ -54,8 +54,8 @@ of my results from different tests:
 - [LeftValues][22]
 
 Political persuasion is a mess of interests, identity, and social connections.
-The political institutions in your country can also seriously influence the way
-citizens recognize their political identity. In multi-party systems people often
+The political institutions in your country can also influence the way citizens
+recognize their political identity. In multi-party systems people often
 gravitate into smaller camps (environmentalists, labor, commerce, etc) whereas
 in big tent party countries like the United States and the UK political
 persuasion is typically more holistic. In fact, there's some mathematics that
@@ -68,17 +68,17 @@ But this is too nitty gritty. A detailed analysis of political persuasion,
 evolution, and identity on an individual level would find some really
 interesting psychological dynamics involving group identity, personal interests,
 knee jerk responses, and people with vaguely or ill-defined political attitudes
-that become starkly polarized under different circumstances (see "The Gray
-Matter of Political Identity").
+that become starkly polarized under different circumstances.
 
-Conservatism and Liberalism have pretty obvious roots: to conserve something is
-to keep it the same, prevent it from running out, to be more reserved.
-Liberalism is to change things, accept new ways of doing things, and be more
-open. These aren't controversial definitions. Edmund Burke laid out Conservatism
-during the French Revolution pretty clearly: it's to believe that tradition and
-historical institutions are meaningful and worth keeping. And John Stuart Mill
-laid out Liberalism pretty clearly in On Liberty: it's to be accepting of
-virtually anything that doesn't hurt anyone else.
+Conservatism and Liberalism have pretty obvious roots: <term>Conservatism</term>
+is to conserve something is to keep it the same, prevent it from running out, to
+be more reserved. <term>Liberalism</term> is to change things, accept new ways
+of doing things, and be more open. These aren't controversial definitions.
+Edmund Burke laid out Conservatism during the French Revolution pretty clearly:
+it's to believe that tradition and historical institutions are meaningful and
+worth keeping. And John Stuart Mill laid out Liberalism pretty clearly in On
+Liberty: it's to be accepting of virtually anything that doesn't hurt anyone
+else.
 
 We can sit here and talk about how the modern Republican party is the
 blow-it-all-up party and the modern liberal party is the party of big government
@@ -90,7 +90,7 @@ estimation, neither the hell is Liberalism, no matter what the Wikipedia wants
 to say.
 
 Adam Gopnik, my favorite essayist, recently wrote a book, titled [A Thousand
-Small Sanities][7], about the concept of liberalism and how it just comes down
+Small Sanities][7], about the concept of Liberalism and how it just comes down
 to a mentality of experimentation and progress. Learning through practice. And
 this is the reason Liberalism tends toward big government economic solutions in
 the 20th and 21st century and in no way resembles Classical Liberalism: Liberals
@@ -105,7 +105,7 @@ Contrariwise, Conservatism is the instinct to fear change. It is to recognize
 that systems are fragile, that people are dangerous, and that society can, and
 _has_ collapsed. As an instinct, Conservatism believes the people of the present
 are _not_ free, but are duty-bound to shepherd the treasures bestowed upon us by
-the past to the future.
+the past into the future.
 
 So in the end, I cannot see Open-Closed as anything _other_ than
 Liberal-Conservative, and I don't see how anyone can say otherwise. They are
@@ -120,11 +120,11 @@ be about, change.
 >
 > - Heraclitus
 
-I often coin pithy statements that conceptualize my thinking. Liberals learn
-from their mistakes, conservatives double down on them. I usually say this in
-the heat of discussion about how I can't stand Trumplicans. It's unfair, but
-accurate, to the politics of today. But it really does a disservice to
-Conservatism.
+I often coin pithy statements that conceptualize my thinking. <term>Liberals
+learn from their mistakes, conservatives double down on them.</term> I usually
+say this in the heat of discussion about how I can't stand Trumplicans. It's
+unfair, but accurate, to the politics of today. But it really does a disservice
+to Conservatism.
 
 Politics is the power structure that controls a society's legitimate means of
 force. It is no more, and no less, than that. Howsoever the means of force
@@ -138,7 +138,7 @@ control as the sole source of legitimate force. The book The Narrow Corridor and
 its "Shackled Leviathan" is a really enlightening window into this concept.
 
 But there is one, and only one, reality which politics has to contend with:
-Change.
+<term>Change</term>.
 
 I feel like there's no reason to argue this, that no one can disagree, but it
 would behoove me to at least provide a little evidence for this.
@@ -172,7 +172,8 @@ simple systems.
 
 This is true in nearly every domain. For instance, we talk about how you can
 kill one species and the result is a cascading domino effect of other species
-dying out. Well, society is a very, _very_ nondeterministic and complex system.
+dying out. They're called keystone species and we count among them frogs, bees,
+and wolves. Well, society is a very, _very_ nondeterministic and complex system.
 Making a change to society, no matter how well-intentioned, can easily have
 unintended consequences. Can easily have _bad_ consequences. Societally
 destructive consequences.
@@ -237,14 +238,14 @@ volition toward what is best for me come from?
 
 You see, we have a bit of an infinite regress. What's called a [Homunculus
 Argument][28]. This is because free will is an ill-defined concept that
-evaporates upon examination. At base, we are, even in our own actions, outside
+evaporates upon examination. At base, we are, even in our own desires, outside
 our own control at some basic level.
 
 I eventually learned that this is basically what Hume was arguing in his defense
 of soft determinacy (as opposed to hard determinacy, that the universe is
 basically just a set of complicated equations which can (ostensibly) be
-calculated n-moves out to predict the future). But the idea is deeper than that,
-for its implications in human society. And for this, we can turn to the
+calculated n-moves out to predict the future). But the idea is deeper than that
+because of its implications in human society. And for this, we can turn to the
 Belgians.
 
 These deep subliminal volitions over which we have no power, if we don't pay
@@ -276,9 +277,9 @@ that allows them to be perpetrated.
 
 I am not a hippy. I am not back-to-nature. I am not one of civilization's
 discontents. In fact, I despise anti-modernists that assume the past is better
-than the present. It is, _demonstrably_, true that the present is better than
-the past. But I do recognize that these three phenomena, and most evil today,
-are irruptions of reason's dismissal of passion.
+than the present. The present is, _demonstrably_, better than the past. But I do
+recognize that these three phenomena, and most evil today, are irruptions of
+reason's dismissal of passion.
 
 # Political Persuasion as the Genetics of Social Evolution
 
@@ -348,18 +349,19 @@ I love to draw a spectrum like this:
 
 The point on which my theory gets shakiest is here. On the extremes. Sometimes I
 think Radicals are fundamentally different from Reactionaries, sometimes I think
-the Horseshoe Theory is fundamentally right. Honestly, I think it is right.
+the Horseshoe Theory is fundamentally right. Honestly, I think it _is_ right.
 
 I always want to call Leftists Gauchists, which is just French for Leftist.
 Leftist implies a symmetry with Rightist, but that's not a good word, so I'm
 just going to keep calling them Radicals.
 
 You can get so liberal that you don't learn from experience and try new things
-to advance but actively seek some ideal future that you have in your head. We
-can call this radicalism.
+to advance, but instead actively seek some ideal future that you have in your
+head. We can call this <term>Radicalism</term>.
 
 You can also get so conservative that you don't remember the past and think it
-was better than the present and want to go back to it. We call this Reaction.
+was better than the present and want to go back to it. We call this
+<term>Reaction</term>.
 
 The term radical is thrown around as not having a political position but it
 really does. [Wikipedia][18]:
@@ -428,18 +430,20 @@ of theory.
 There's an interesting dispute in social philosophy: what is the root struggle?
 What is the root motivation of all human interaction? There's a lot of names
 that don't directly argue with each other but that propose different
-motivations. Freud believed sex was the basis. Marx believed capital (money).
-Foucault, power. I'm inclined to believe them all, because they're all just
-about survival. With sex, you reproduce and survive. With money, you have power.
-And with power, you can ensure your survival.
+motivations. Freud believed <term>sex</term> was the basis. Marx believed
+<term>capital</term>. Foucault, <term>power</term>. I'm inclined to believe them
+all, because they're all just about <term>survival</term>. With sex, you
+reproduce and survive. With money, you have power. And with power, you can
+ensure your survival.
 
 It's become a bit of a refrain that the West used to believe that with economic
 freedom political freedom would follow and that the West was wrong, and China is
 the proof. The refrain is correct: political power is the ultimate power, in
 that it has the power to end financial power. Whenever any political power is
 too concentrated, it will be abused, and usually to negative economic effect.
-Because people with power will abuse it. Power corrupts, absolute power corrupts
-absolutely. These are all goddamn clichés, but they're clichés for a reason.
+Because people with power will abuse it. <term>Power corrupts, absolute power
+corrupts absolutely.</term> These are all goddamn clichés, but they're clichés
+for a reason.
 
 Whenever any group of people has advantage over another group of people,
 whenever they have _power_ over that other group of people, they will use that
@@ -489,11 +493,11 @@ the people, it requires a check: the conscience of politics.
 There are two powers in any country: financial and political. A society can only
 truly be free when they keep each other in check.
 
-We can actually try analyzing further than I ever have: the financial power of a
-society is almost alimentary. It exists to feed consumption. It is the Social
-Id. The political power, on the other hand, is the Social Ego. The one,
-Dionysian, the other, Apollonian. Too free a market, addiction. Too restricted a
-market, neurosis.
+The financial power of a society is almost alimentary. It exists to feed
+consumption. It is the <term>Social Id</term>. The political power, on the other
+hand, is the <term>Social Ego</term>. The one, Dionysian, the other, Apollonian.
+Too free a market, <term>addiction</term>. Too restricted a market,
+<term>neurosis</term>.
 
 # Concentration of Power and the Origin of Political Institutions
 
@@ -606,8 +610,8 @@ an overview of the evolution of the American Party System from 1860 to the
 present day. I believe here I am walking out onto thin ice, but I am not going
 to let that deter me from laying out my understanding of the world.
 
-How correct that overview was is largely irrelevant. The shape is correct, and
-gleaned from history books I've read. I'm going to give it now.
+How correct that overview was is largely irrelevant. The shape is correct. I'm
+going to repeat it now.
 
 I think the American party system is a lot like a giant wheel of shifting
 political constituencies and party elites trying their damndest to win elections
@@ -616,18 +620,18 @@ United States since 1860:
 
 In the Civil War the parties were pretty well-delineated. The South was held by
 the Democrats, a white-identity based party of rural poor and landed
-aristocrats. They were very closed. The North was held by the Republicans, a
-loose collection of abolitionists and liberals. They were very "Whiggish" in the
-sense of liberal technocrats. Woke Capitalists, if you will. They were very
-open.
+aristocrats. They were very <term>closed</term>. The North was held by the
+Republicans, a loose collection of abolitionists and liberals. They were very
+"Whiggish" in the sense of liberal technocrats. Woke Capitalists, if you will.
+They were very <term>open</term>.
 
-We can say, at this point, that the central axis of our political wheel was
-race-based.
+We can say, at this point, that the central spoke, or axis, of our political
+wheel was race.
 
 During the war, the commercial interests in the North became very rich, and very
 Republican. After the war, these commercial interests, being the alimentary
 canal of society, couldn't give less of a shit about the interests of poor
-blacks in the poor south. Reconstruction lasted a little under 12 years, while
+blacks in the poor south. Reconstruction lasted a little under 15 years, while
 the liberals in the Republican party held onto their power, but gradually, the
 commercial, business coalition of the Republican party successfully wrested
 power from them and the Republicans ceased to care about racial equality. It was
@@ -643,9 +647,9 @@ the US. An apartheid was allowed to be reinstated in the Jim Crow South.
 
 Come the 1930's, the US enters the Great Depression. Extreme poverty lays across
 the land like a shroud. The Democratic Party, having always been more interested
-in labor due to its base in the poor, rural, south, picks up the issue of class
-and labor as its primary platform. We have FDR, a New Yorker democrat, has
-nearly 4 consecutive clean sweeps of the South.
+in labor than the Republican Party due to its base in the poor, rural, south,
+picks up the issue of class and labor as its primary platform. FDR, a [New York]
+democrat, has 4 consecutive clean sweeps of the South.
 
 Now, FDR was no racial egalitarian. There were quite a lot of racially
 exclusionary policies during the New Deal. So, the central axis of our politics
@@ -653,19 +657,21 @@ at this point was class-based.
 
 In the 1950's, we can say, definitively, that the Republican party still had
 civil rights members: Dwight Eisenhower, a Republican, sent the 101st Airborne
-into Little Rock to force desegregation brought by a Supreme Court Decision lead
-by his own Republican nominee: Earl Warren. In fact, Earl Warren is known almost
-universally as a distinctly liberal Justice. We can say, therefore, that the
-Republican party had liberal members even into the 1950s. I don't know that we
-can call Eisenhower a strict egalitarian, there's some evidence I've seen that
-he regretted having to do it, but can we just take a moment and think about how
-awesome it is that the same company that dropped behind enemy lines the night
-before D-Day went into Arkansas to force desegregation?
+into Little Rock to force desegregation, brought upon by a Supreme Court
+decision lead by his own Republican nominee: Earl Warren. In fact, Earl Warren
+is known almost universally as a distinctly liberal Justice _despite being a
+Republican_. We can say, therefore, that the Republican party had liberal
+members even into the 1950s. I don't know that we can call Eisenhower a strict
+egalitarian, there's some evidence I've seen that he regretted having to send in
+the military, but can we just take a moment and think about how awesome it is
+that the same company that dropped behind enemy lines the night before D-Day
+went into Arkansas to force desegregation?
 
 In the 1960s, LBJ started to change the status quo by seeking a new political
 market. LBJ was a notorious racist, but he must have seen political winds
-changing and pursued the Civil Rights Act and the Voting Rights Act vehemently
-to passage. And with that the Democrats became the party of civil rights.
+changing because he pursued the Civil Rights Act and the Voting Rights Act
+vehemently to passage. And with that the Democrats became the party of civil
+rights.
 
 So in the 1960s we have a new battle line drawing. It is the same one as in
 1860, only inverted. There is a new unclaimed political market: racists.
@@ -693,21 +699,27 @@ across cultures, is _race_.
 Racists are _always_ conservative. They do not want to accept another group of
 people as themselves. Because strangeness, otherness, is uncertain. Is change.
 
-This is what I meant by saying our political our political parties are not
-_instinctually_ political like we are. Our parties are actually _rarely_ divided
-upon the race axis. And when they are, we have mass irruptions of political
-turmoil.
+This is what I meant by saying our political parties are not _instinctually_
+political like we are. Our parties are actually _rarely_ divided upon the race
+axis. And when they are, we have mass eruptions of political turmoil.
 
 <!--# The Gray Matter of Political Identity-->
 
 # Risk, Uncertainty, and Aversion to Change
 
-I think that's more to the world than I've already discussed and I want to lay a
-little groundwork for how I expect I'll think in the future.
+I think that there's more to the world than I've already discussed and I want to
+lay a little groundwork for how I expect I'll think in the future.
+
+First, I want to talk in another essay about what I call "The Gray Matter of
+Political Identity" and how people don't have distinct positions until they're
+forced to choose. This dovetails with polarization and some stuff Gene Sharp
+writes about during the commencement of any mass action. I'd also like to talk
+about the American State Religion. Yes, it exists. But for now I'll talk a bit
+about how I expect my thinking on what I've talked about to evolve.
 
 I have heretofore described the centrality of change to politics, but really
 it's more than that: it's uncertainty. Fear of change is fear of uncertainty.
-Fear of others is fear of uncertainty. Fear, itself, is uncertainty.
+Fear of others is fear of uncertainty. Fear itself is uncertainty.
 
 Let's examine this.
 
@@ -856,7 +868,7 @@ this.-->
 [29]: https://www.newyorker.com/magazine/2015/06/22/the-death-treatment
 [30]:
   https://web.archive.org/web/20200220224509/http://content.time.com/time/magazine/article/0,9171,2146449-3,00.html
-[32]:
+[31]:
   https://healthland.time.com/2010/10/28/never-mind-the-tea-party-can-a-liberal-gene-make-you-a-party-animal/
 [33]:
   https://nowthisnews.com/videos/politics/ronald-reagans-final-presidential-speech-was-for-immigrants
