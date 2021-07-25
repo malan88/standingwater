@@ -817,7 +817,7 @@ Conservatives fear, and Liberals hope, and they're both right, to fear and hope.
 - [The Alt-Right Playbook by Innuendo Studios, aka Ian Danskin](https://www.youtube.com/playlist?list=PLJA_jUddXvY7v0VkYRbANnTnzkA_HMFtQ)
 - [The Division of Cognitive Labor by Philip Kitcher](https://www.jstor.org/stable/2026796)
 - [The Interpretation of Dreams by Sigmnud Freud](https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams)
-  [Selected Papers on Hysteria by Sigmund Freud](https://en.wikisource.org/wiki/Selected_Papers_on_Hysteria_and_Other_Psychoneuroses)
+- [Selected Papers on Hysteria by Sigmund Freud](https://en.wikisource.org/wiki/Selected_Papers_on_Hysteria_and_Other_Psychoneuroses)
 - Selected Works by Carl Jung
 - [The Warriors by J. Glenn Gray](https://www.amazon.com/Warriors-Reflections-Men-Battle/dp/0803270763)
 - [War Is a Force That Gives Us Meaning by Chris Hedges](https://en.wikipedia.org/wiki/War_Is_a_Force_That_Gives_Us_Meaning)
