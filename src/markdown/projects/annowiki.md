@@ -1,11 +1,23 @@
 ---
 title: "Intertextual Canon Cloud (anno.wiki)"
-url: "https://github.com/mas-4/icc"
+url: "https://github.com/AnnoWiki/icc"
 featureImage: "./annowiki.png"
 short: "annowiki"
 category: "fullstack"
-tags: ["python", "javascript", "flask", "etl", "heroku", "mariadb", "elasticsearch", "sqlalchemy", "jinja2"]
+tags:
+  [
+    "python",
+    "javascript",
+    "flask",
+    "etl",
+    "heroku",
+    "mariadb",
+    "elasticsearch",
+    "sqlalchemy",
+    "jinja2",
+  ]
 ---
+
 The ICC is a web application designed to allow for collaboratively building an
 exhaustive and definitive repository of annotated literature. I designed,
 developed, deployed, and continue to maintain the project solo, managing
@@ -27,7 +39,6 @@ the site.
 - [Talisman][8] for CSRF security
 - [pytest][9] for testing
 - [WTForms][10] for forms
-
 
 [0]: https://anno.wiki
 [1]: https://flask.palletsprojects.com/en/1.1.x/
