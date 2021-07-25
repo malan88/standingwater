@@ -12,7 +12,7 @@ import { breakpoints } from "../global/breakpoints";
 const links = {
   GitHub: [faGithub, "https://github.com/mas-4"],
   StackOverflow: [faStackOverflow, "https://stackoverflow.com/story/mas4"],
-  LinkedIn: [faLinkedin, "https://www.linkedin.com/michael-sendker"],
+  LinkedIn: [faLinkedin, "https://www.linkedin.com/in/michael-sendker"],
   Résumé: [
     faFilePdf,
     "https://raw.githubusercontent.com/mas-4/resume/master/main.pdf",
