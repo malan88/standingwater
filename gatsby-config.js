@@ -24,10 +24,10 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 2000,
+              maxWidth: 1000,
               withWebp: true,
               showCaptions: true,
-              quality: 90,
+              quality: 80,
             },
           },
           "gatsby-remark-emoji",

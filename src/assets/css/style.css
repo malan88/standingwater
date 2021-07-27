@@ -60,7 +60,6 @@ blockquote {
   color: var(--Charcoal);
   padding: 1rem 2rem;
   border-radius: 20px;
-  border: 1px solid var(--Crayola);
 }
 blockquote {
   width: 90%;
@@ -101,9 +100,13 @@ term {
 }
 
 figure {
-  padding: 1% 5%;
+  padding: 1rem 0;
   margin: 0 auto;
   background-color: var(--AmberLight);
+  border-radius: 20px;
+}
+figure img {
+  border-radius: 20px;
 }
 figure figcaption {
   font-family: EB Garamond, Serif;
