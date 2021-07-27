@@ -58,15 +58,15 @@ pre,
 blockquote {
   background-color: var(--AmberLight);
   color: var(--Charcoal);
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   border: 1px solid var(--Crayola);
 }
 blockquote {
   width: 90%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: thin;
   font-family: EB Garamond, Serif;
 }
 pre {
@@ -98,4 +98,14 @@ pre code {
 term {
   color: #e76f51;
   font-family: Sriracha;
+}
+
+figure {
+  padding: 1% 5%;
+  margin: 0 auto;
+  background-color: var(--AmberLight);
+}
+figure figcaption {
+  font-family: EB Garamond, Serif;
+  text-align: center;
 }

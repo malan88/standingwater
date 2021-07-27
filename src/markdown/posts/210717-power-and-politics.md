@@ -208,6 +208,8 @@ your society is stronger than that?
 >
 > - David Hume, A Treatise of Human Nature
 
+![The Sleep of Reason Produces Monsters](./images/goya.jpg)
+
 Goya's painting, [The Sleep of Reason Produces Monsters][27], is a kind of
 leitmotif on this for me. There's a handful of names that come to mind that
 inform my thinking about this link between Conservatism, Original Sin, Change,

@@ -19,18 +19,20 @@ module.exports = {
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
-      plugins: [
-        {
-          resolve: "gatsby-remark-images",
-          options: {
-            maxWidth: 5000,
-            withWebp: true,
-            showCaptions: true,
-            quality: 100,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 2000,
+              withWebp: true,
+              showCaptions: true,
+              quality: 90,
+            },
           },
-        },
-        "gatsby-remark-emoji",
-      ],
+          "gatsby-remark-emoji",
+        ],
+      }
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-fontawesome-css",
