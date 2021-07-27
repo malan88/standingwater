@@ -1,6 +1,6 @@
 ---
 title: "Intertextual Canon Cloud (anno.wiki)"
-url: "https://github.com/AnnoWiki/icc"
+url: "https://github.com/Anno-Wiki/icc"
 featureImage: "./annowiki.png"
 short: "annowiki"
 category: "fullstack"
