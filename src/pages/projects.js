@@ -5,13 +5,17 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import order from "../markdown/projects/sort";
 import { breakpoints } from "../global/breakpoints";
-import { faAngleDoubleUp, faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDoubleUp,
+  faAngleDoubleDown,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { categoriesSmall as categories } from '../global/categories'
+import { categoriesSmall as categories } from "../global/categories";
 
 const Body = styled.div`
   font-size: 1.2rem;
 `;
+
 const IconFrame = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -32,13 +36,21 @@ const IconFrame = styled.div`
     margin: 1rem;
   }
 `;
+
 const ImageWrapper = styled.div`
   width: 800px;
   margin: 0 auto;
-  ${breakpoints.vp12} { width: 500px; }
-  ${breakpoints.vp4} { width: 320px; }
-  ${breakpoints.vp3} { width: 280px; }
+  ${breakpoints.vp12} {
+    width: 500px;
+  }
+  ${breakpoints.vp4} {
+    width: 320px;
+  }
+  ${breakpoints.vp3} {
+    width: 280px;
+  }
 `;
+
 const Text = styled.div`
   width: 85%;
   margin: 2rem auto;
@@ -48,6 +60,7 @@ const Text = styled.div`
     font-size: 1.2rem;
   }
 `;
+
 const Box = styled.div`
   border-color: ${(props) => props.theme.colors.Charcoal};
   box-shadow: 3px 3px 3px ${(props) => props.theme.colors.Emerald};
@@ -60,12 +73,17 @@ const Box = styled.div`
     margin: 1rem 0;
   }
   ${breakpoints.vp4} {
-    h1 { font-size: 2rem; }
+    h1 {
+      font-size: 2rem;
+    }
   }
   ${breakpoints.vp3} {
-    h1 { font-size: 1.5rem; }
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;
+
 const Pill = styled.button`
   border-radius: 50px;
   background-color: ${(props) => props.theme.colors.Amber};
@@ -84,6 +102,7 @@ const Pill = styled.button`
     font-size: 1rem;
   }
 `;
+
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +127,9 @@ const Project = (props) => {
         {props.tags.map((tag) => (
           <Pill
             key={tag + props.title}
-            className={`clickTag ${props.selectedTags.includes(tag) ? "active" : ""}`}
+            className={`clickTag ${
+              props.selectedTags.includes(tag) ? "active" : ""
+            }`}
             onClick={() => props.clickTagHandler(tag)}
           >
             {tag}
@@ -136,6 +157,7 @@ const SideBarContainer = styled.div`
     display: none;
   }
 `;
+
 const SidebarLink = styled.a`
   width: 200px;
   white-space: nowrap;
@@ -143,7 +165,9 @@ const SidebarLink = styled.a`
   text-overflow: ellipsis;
   text-align: center;
 `;
+
 const CategoryIcon = styled(FontAwesomeIcon)``;
+
 const Icon = styled(FontAwesomeIcon)`
   margin: 1rem auto;
   width: fit-content;
@@ -171,7 +195,7 @@ const SideBar = ({ visible }) => {
         title="Scroll to top"
       />
       {visible.map(({ node, i }) => (
-        <SidebarLink key={i} href={`#${node.frontmatter.title}`}>
+        <SidebarLink key={node.frontmatter.title + i} href={`#${node.frontmatter.title}`}>
           {node.frontmatter.title}
         </SidebarLink>
       ))}
@@ -300,7 +324,9 @@ class ProjectPage extends React.Component {
           <Tags>
             {Object.keys(categories).map((category) => (
               <IconFrame
-                className={`clickTag ${this.state.selectedCategory === category ? "active" : ""}`}
+                className={`clickTag ${
+                  this.state.selectedCategory === category ? "active" : ""
+                }`}
                 onClick={() => this.clickCategoryHandler(category)}
                 key={category + "root"}
               >
@@ -312,7 +338,9 @@ class ProjectPage extends React.Component {
           <Tags>
             {this.state.visibleTags.map((tag) => (
               <Pill
-                className={`clickTag ${this.state.selectedTags.includes(tag) ? "active" : ""}`}
+                className={`clickTag ${
+                  this.state.selectedTags.includes(tag) ? "active" : ""
+                }`}
                 onClick={() => this.clickTagHandler(tag)}
                 key={tag}
               >
@@ -360,9 +388,7 @@ export const query = graphql`
             tags
             featureImage {
               childImageSharp {
-                gatsbyImageData(
-                  quality: 90
-                )
+                gatsbyImageData(quality: 90)
               }
             }
           }
