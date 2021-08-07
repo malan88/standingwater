@@ -1,6 +1,6 @@
 ---
 title: "Maudlin"
-url: "https://srv.stdwtr.io"
+url: "https://maudlin.standingwater.io"
 featureImage: "./maudlin.png"
 short: "maudlin"
 category: "backend"
@@ -33,5 +33,15 @@ as a gradient between red and green. Turns out, you can literally just represent
 any two points in hex color space as points on a graph and to find the point in
 the gradient you just take the distance. The code's [here][0], if you want to
 see it.
+
+**Update 8/7/2021**: Maudlin is now up to 110k articles, and I deployed it to
+Digital Ocean. The scraper still runs on my local machine, and I implemented a
+system for generating a day's wordcloud every two hours and syncing it over to
+the DO server.
+
+I did some back of the envelope calculations to figure out if a cheap basic
+droplet would have enough storage space for all my articles, and at the rate the
+database grows it seems I'd end up taking about a year per gigabyte. At 25gb for
+a basic level droplet, that's about 25 years before I'd have to upgrade storage.
 
 [0]: https://github.com/mas-4/maudlin/blob/51ee8c60aa8e4ab5328d981cbd45ec670451d32b/newscrawler/utils.py#L11-L18
