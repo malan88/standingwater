@@ -151,8 +151,9 @@ const SideBarContainer = styled.div`
   left: 2rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: ${(props) => props.theme.fonts.Title};
+  top: 0rem;
   ${breakpoints.vp10} {
     display: none;
   }
