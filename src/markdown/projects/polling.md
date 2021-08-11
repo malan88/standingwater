@@ -4,7 +4,19 @@ url: "https://polling.netlify.app"
 featureImage: "./polling.png"
 short: "polling"
 category: "automation"
-tags: [ "data", "civics", "netlify", "matplotlib", "pandas", "seaborn", "gatsby", "aws", "twilio" "requests" ]
+tags:
+  [
+    "data",
+    "civics",
+    "netlify",
+    "matplotlib",
+    "pandas",
+    "seaborn",
+    "gatsby",
+    "aws",
+    "twilio",
+    "requests",
+  ]
 ---
 
 During the 2020 election my friend and I were rapt with the polling changes.
