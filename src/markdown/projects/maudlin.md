@@ -14,6 +14,7 @@ tags:
     "nltk",
     "materialize css",
     "postgres",
+    "fullstack"
   ]
 ---
 
