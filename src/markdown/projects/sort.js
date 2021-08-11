@@ -1,9 +1,9 @@
 const order = [
+  'maudlin',
   'annowiki',
 //  'strata',
   'fiteyes',
   'pi',
-  'maudlin',
   'standingwater',
   'euler',
   'amazon',
