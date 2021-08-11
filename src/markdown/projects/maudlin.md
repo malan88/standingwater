@@ -3,9 +3,11 @@ title: "Maudlin"
 url: "https://maudlin.standingwater.io"
 featureImage: "./maudlin.png"
 short: "maudlin"
-category: "backend"
+category: "fullstack"
 tags:
   [
+    "data",
+    "digital ocean",
     "scrapy",
     "beautifulsoup4",
     "selenium",
@@ -14,11 +16,10 @@ tags:
     "nltk",
     "materialize css",
     "postgres",
-    "fullstack"
   ]
 ---
 
-I wanted to do. I had written a lot of scrapers, but never a crawler, and I'd
+Before this, I had written a lot of scrapers, but never a crawler, and I'd
 never tried scrapy. So I wanted to build a crawler with scrapy, use it to
 generate sentiment analysis of news articles, and see what news agencies were
 the most happy or sad or neutral.
@@ -56,7 +57,6 @@ as a gradient between red and green. Turns out, you can literally just represent
 any two points in hex color space as points on a graph and to find the point in
 the gradient you just take the distance. The code's [here][0], if you want to
 see it.
-
 
 [0]:
   https://github.com/mas-4/maudlin/blob/51ee8c60aa8e4ab5328d981cbd45ec670451d32b/newscrawler/utils.py#L11-L18

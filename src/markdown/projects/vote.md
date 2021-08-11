@@ -3,7 +3,7 @@ title: "vote.py"
 url: "https://github.com/mas-4/vote"
 short: "vote"
 category: "automation"
-tags: ["twilio", "civics", "aws ec2", "python"]
+tags: ["twilio", "aws", "python", "civics"]
 ---
 A friend of mine had never voted, nor registered to vote. So I made sure she did
 in 2020 by writing this little script to text her using Twilio to remind her to

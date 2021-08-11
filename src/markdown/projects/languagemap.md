@@ -4,7 +4,7 @@ url: "https://language-map.com"
 featureImage: "./languagemap.jpg"
 short: "languagemap"
 category: "frontend"
-tags: ["python", "react", "beautifulsoup4", "scraping", "reactjs", "data", "pandas"]
+tags: ["python", "react", "beautifulsoup4", "scraping", "data", "pandas"]
 ---
 This project was inspired by a trend on [r/languagelearning][11] where
 people would post world maps with the countries colored by the languages they

@@ -3,7 +3,7 @@ title: "teamup.py"
 url: "https://github.com/mas-4/teamup"
 short: "teamup"
 category: "automation"
-tags: ["combinatronics", "good enough results", "python"]
+tags: ["combinatronics", "python"]
 ---
 
 This script came about because of a family tradition of playing Christmas
