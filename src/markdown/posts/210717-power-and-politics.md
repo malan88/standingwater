@@ -556,7 +556,7 @@ collective psychological trick, a kind of mass interlocking fiction. But that
 _doesn't make it fake_.
 
 One of the most fascinating results of Gene Sharp's analysis is to recognize
-that the resulting government structure after it's formation derives, almost
+that the resulting government structure after its formation derives, almost
 linearly, from the source of its creation. Governments formed by small groups of
 elites tend to be less democratic, and governments formed by masses of peoples
 tend to be _more_ democratic. This makes sense, intuitively, because if a small
