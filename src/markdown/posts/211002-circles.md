@@ -141,7 +141,7 @@ Well that's not doing it. Let's think about this.
 
 We're definitely converting our $\theta$ from degrees to radians. But now that I
 think of it, the output of each of `Math.sin` and `Math.cos` has got to be
-$\{\alpha : -1 \leq \theta \leq 1\}$, so we're just drawing a lot of lines from
+$\{\alpha : -1 \leq \alpha \leq 1\}$, so we're just drawing a lot of lines from
 the origin to a circle around the pixels in the top left corner. Really it's
 just a square because it's the top circling around the top pixel and 3 pixels
 outside the frame.
