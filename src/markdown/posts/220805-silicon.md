@@ -138,6 +138,27 @@ bloodbath.
 Things are going to get interesting in the next 10 years. And I have a front row
 seat. 🫠
 
+# The Game of Sand
+
+The Game of Thrones was about a seat of power for controlling the most important
+resource in the Seven Kingdoms: the Seven Kingdoms themselves. In a post
+agricultural society, land isn't anywhere near as valuable. We can produce
+massive amounts of wealth and value on small land footprints. Imagine the most
+valuable plot of land in an agricultural society, and now imagine the most
+valuable plot of land in the post-industrial world of today. In the former, we'd
+say the largest plot of arable land. In the latter, we'd say somewhere in
+downtown Manhattan.
+
+Or Taiwan.
+
+Silicon wafers are created with thousands of chemicals, from the humble sand to
+the noble neon. None of these resources come from Taiwan. But there is one
+element that does: know-how. Kill all the Taiwanese and you have some useless
+clean rooms. Leave Taiwan intact and you have semiconductors.
+
+The most important resource today is not physical. It's a type of know-how. The
+know-how to make integrated circuits.
+
 [wnf]:
   https://www.amazon.com/Why-Nations-Fail-Origins-Prosperity/dp/0307719227/ref=sr_1_1?crid=XQ5R3B73L02W&keywords=why+nations+fail&qid=1659731931&sprefix=why+nations+fail%2Caps%2C132&sr=8-1
 [wafer]: https://en.wikipedia.org/wiki/Wafer_(electronics)
