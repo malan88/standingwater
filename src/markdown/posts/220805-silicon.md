@@ -54,7 +54,7 @@ integrated circuit. The process of photolithography is basically of five steps
 4. Lay on your material for the structures.
 5. Remove the photoresist
 
-When I say this is highly simplified, I really mean this could be comletely
+When I say this is highly simplified, I really mean this could be completely
 wrong, I'm not really sure, and will be looking into it more again to understand
 better. (This job has required more repeated learning of concepts than anything
 I've heretofore tried to master.) For a better introduction to photolithography,
