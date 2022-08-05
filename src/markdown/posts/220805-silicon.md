@@ -1,6 +1,6 @@
 ---
 title: "Silicon"
-date: "2022-05-14"
+date: "2022-08-05"
 ---
 
 I rewatched Game of Thrones last week. It's still just as great and just as
