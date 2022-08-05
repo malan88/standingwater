@@ -159,6 +159,12 @@ clean rooms. Leave Taiwan intact and you have semiconductors.
 The most important resource today is not physical. It's a type of know-how. The
 know-how to make integrated circuits.
 
+Land can be controlled by just a single man, paying a lot of dumb powerless
+people to control it. But Know-How can only be controlled through the
+cooperation of all the people that know how. If there is a more succinct
+demonstration of how democracy has triumphed in the modern world, I haven't
+found it.
+
 [wnf]:
   https://www.amazon.com/Why-Nations-Fail-Origins-Prosperity/dp/0307719227/ref=sr_1_1?crid=XQ5R3B73L02W&keywords=why+nations+fail&qid=1659731931&sprefix=why+nations+fail%2Caps%2C132&sr=8-1
 [wafer]: https://en.wikipedia.org/wiki/Wafer_(electronics)
