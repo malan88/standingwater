@@ -114,7 +114,7 @@ specialized in memory and Nvidia doesn't have fabs). If China were to invade
 Taiwan, I can think of four results:
 
 1. China blockades Taiwan and a huge portion of the world's semiconductors are
-   sidelined
+   sidelined.
 2. China scuttles TSMC and a huge portion of the world's semiconductors are
    sidelined.
 3. Taiwan scuttles TSMC and a huge portion of the world's semiconductors are
@@ -129,7 +129,7 @@ understand, they're the only producers of EUV machines.) Six (Six!) of their
 sixteen locations are in China or Taiwan. I have no idea what those locations
 are specialized in (its easy to imagine the Taiwanese plants being specialized
 in EUV) but even pretending they're fungible locations, that's almost 40% of the
-world's semiconductor tool chain going offline overnight in the even of an
+world's semiconductor tool chain going offline overnight in the event of an
 invasion of Taiwan. My God.
 
 Imagine the 2020-22 chip shortage on steroids. Christ. It would be an economic
